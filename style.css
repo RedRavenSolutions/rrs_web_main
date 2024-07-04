@@ -1,0 +1,26 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+    font-family: inherit;
+    outline: none;
+}
+
+form button:hover {
+    background-color: #e53e3e;
+}
+
+footer {
+    margin-top: 20px;
+}
