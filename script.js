@@ -21,3 +21,16 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert('There was an error sending your message. Please try again later.');
     });
 });
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});
