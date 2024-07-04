@@ -72,33 +72,48 @@
         </section>
     
         <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-gray-100">
-            <div class="container mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-12">Contact Us</h2>
-                <p class="text-xl mb-8">Have a project in mind? Get in touch with us today!</p>
-                <form class="max-w-md mx-auto">
-                    <div class="mb-4">
-                        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border-2 border-gray-200">
-                    </div>
-                    <div class="mb-4">
-                        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg border-2 border-gray-200">
-                    </div>
-                    <div class="mb-4">
-                        <textarea placeholder="Your Message" class="w-full p-3 rounded-lg border-2 border-gray-200"></textarea>
-                    </div>
-                    <button type="submit" class="bg-red-600 text-white py-3 px-6 rounded-full">Send Message</button>
-                </form>
-            </div>
-        </section>
-    
-        <!-- Footer Section -->
-        <footer class="bg-red-600 text-white py-6">
-            <div class="container mx-auto text-center">
-                &copy; 2024 Red Raven Solutions. All rights reserved.
-            </div>
-        </footer>
-    
-    </body>
-    
-    </html>
-    
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Contact Us</h2>
+            <p class="text-xl mb-8">Have a project in mind? Get in touch with us today!</p>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "46481038",
+    formId: "3e9ca3a2-0b88-4977-8810-2a550b90f783"
+  });
+</script>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-red-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            &copy; 2024 Red Raven Solutions. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('https://example.com/submit-form', { // Replace with your server endpoint
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Your message has been sent successfully!');
+                this.reset();
+            })
+            .catch(error => {
+                alert('There was an error sending your message. Please try again later.');
+            });
+        });
+    </script>
+</body>
+
+</html>
