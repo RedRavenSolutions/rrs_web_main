@@ -9,128 +9,99 @@
     <link rel="icon" href="assets/faviconraven.png" type="image/png">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
+<!DOCTYPE html>
+<html lang="en">
+
 <body class="bg-gray-100 text-gray-900">
 
-    <!-- Header Section -->
-    <header class="bg-red-600 text-white p-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-3xl font-bold">Red Raven Solutions</div>
-            <div class="md:hidden">
-                <button id="menu-btn" class="focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-            <nav class="hidden md:flex space-x-4" id="menu">
-                <a href="#services" class="px-4 py-2">Services</a>
-                <a href="#about" class="px-4 py-2">About Us</a>
-                <a href="#contact" class="px-4 py-2">Contact</a>
-            </nav>
-        </div>
-        <div class="md:hidden" id="mobile-menu-container">
-            <nav id="mobile-menu" class="hidden flex-col space-y-2 mt-4">
-                <a href="#services" class="px-4 py-2 bg-red-700 rounded">Services</a>
-                <a href="#about" class="px-4 py-2 bg-red-700 rounded">About Us</a>
-                <a href="#contact" class="px-4 py-2 bg-red-700 rounded">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <!-- Header with Navigation -->
+  <header class="bg-red-700 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-white text-2xl font-bold">
+        Red Raven Solutions
+      </div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="text-white hover:underline">About Us</a></li>
+          <li><a href="#services" class="text-white hover:underline">Services</a></li>
+          <li><a href="#blog" class="text-white hover:underline">Blog</a></li>
+          <li><a href="#contact" class="text-white hover:underline">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="bg-white py-20">
-        <div class="container mx-auto text-center">
-            <h1 class="text-5xl font-bold mb-6">Innovative Software Development</h1>
-            <p class="text-xl mb-8">Building dynamic and responsive solutions to meet your needs.</p>
-            <a href="#services" class="bg-red-600 text-white py-3 px-6 rounded-full">Our Services</a>
-        </div>
-    </section>
-    
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12">Our Services</h2>
-            <div class="flex flex-wrap justify-center">
-                <div class="w-full md:w-1/4 p-6">
-                    <div class="bg-white rounded-lg shadow-lg p-8">
-                        
+  <!-- Banner Section -->
+  <section class="bg-cover bg-center h-64" style="background-image: assets/cyber-security">
+    <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+      <h1 class="text-white text-4xl font-bold">Cyber Security You Can Trust</h1>
+    </div>
+  </section>
 
-                        <img src="assets/web-dev.png" alt="Web Development" class="mb-4 mx-auto h-24 w-24">
-                        <h3 class="text-2xl font-bold mb-4">Web Development</h3>
-                        <a href="webdevelopment.html" class="bg-red-600 text-white py-3 px-6 rounded-full">Learn More</a><br>
-                        <p>Creating modern and responsive web applications tailored to your business needs.</p>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/4 p-6">
-                    <div class="bg-white rounded-lg shadow-lg p-8">
-                        <img src="assets/mobile-dev.png" alt="Mobile Development" class="mb-4 mx-auto h-24 w-24">
-                        <h3 class="text-2xl font-bold mb-4">Mobile Development</h3>
-                        <p>Designing and developing mobile applications for both iOS and Android platforms.</p>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/4 p-6">
-                    <div class="bg-white rounded-lg shadow-lg p-8">
-                        <img src="assets/software-consulting.png" alt="Software Consulting" class="mb-4 mx-auto h-24 w-24">
-                        <h3 class="text-2xl font-bold mb-4">Software Consulting</h3>
-                        <p>Providing expert advice to help you choose the best technology solutions for your business.</p>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/4 p-6">
-                    <div class="bg-white rounded-lg shadow-lg p-8">
-                        <img src="assets/cyber-security.png" alt="Cyber Security" class="mb-4 mx-auto h-24 w-24">
-                        <h3 class="text-2xl font-bold mb-4">Cybersecurity</h3>
-                        <p>Offering comprehensive cybersecurity solutions to protect your business from digital threats.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- About Us Section -->
+  <section id="about" class="py-12 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">About Us</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Red Raven Solutions is dedicated to providing cutting-edge cybersecurity solutions. Our team of experts ensures your business is secure from threats, keeping your data safe and your systems protected.
+      </p>
+    </div>
+  </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12">About Us</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="flex flex-col items-center">
-                            <img src="assets/chris-coppock.png" alt="Profile 1" class="w-32 h-32 rounded-full mb-4">
-                            <h3 class="text-xl font-bold">Chris Coppock</h3>
-                            <p class="text-center">Chris is a senior security and software engineer with over 20 years of experience in full-stack development.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
+  <!-- Services Section -->
+  <section id="services" class="py-12 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-200 p-6 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Threat Detection</h3>
+          <p class="text-gray-600">Stay ahead of cyber threats with our real-time detection and response services.</p>
         </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12">Contact Us</h2>
-            <p class="text-xl mb-8">Have a project in mind? Get in touch with us today!</p>
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-            <script>
-                hbspt.forms.create({
-                    region: "na1",
-                    portalId: "46481038",
-                    formId: "3e9ca3a2-0b88-4977-8810-2a550b90f783"
-                });
-            </script>
+        <div class="bg-gray-200 p-6 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Data Encryption</h3>
+          <p class="text-gray-600">Ensure your sensitive data is protected with state-of-the-art encryption technology.</p>
         </div>
-    </section>
+        <div class="bg-gray-200 p-6 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Consulting</h3>
+          <p class="text-gray-600">Our experienced consultants provide strategic advice to strengthen your cybersecurity posture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-red-600 text-white py-6">
-        <div class="container mx-auto text-center">
-            &copy; 2024 Red Raven Solutions. All rights reserved.
-        </div>
-    </footer>
-    
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-    
+  <!-- Blog Section -->
+  <section id="blog" class="py-12 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">Latest from Our Blog</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Stay updated with the latest trends, tips, and insights from the world of cybersecurity. Visit our <a href="#" class="text-red-700 hover:underline">Blog</a> for more details.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+   
+   <section id="contact" class="py-20 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12">Contact Us</h2>
+        <p class="text-xl mb-8">Have a project in mind? Get in touch with us today!</p>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "46481038",
+                formId: "3e9ca3a2-0b88-4977-8810-2a550b90f783"
+            });
+        </script>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Red Raven Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
