@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Raven Solutions</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/faviconraven.png" type="image/png">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Raven Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+
 </head>
-<!DOCTYPE html>
-<html lang="en">
 
 <body class="bg-gray-100 text-gray-900">
-
-  <!-- Header with Navigation -->
-  <header class="bg-red-700 p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="text-white text-2xl font-bold">
-        Red Raven Solutions
-      </div>
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center animate-fade-in">
+      <h1 class="text-2xl font-bold text-red-700">Red Raven Solutions</h1>
       <nav>
-        <ul class="flex space-x-6">
-          <li><a href="#about" class="text-white hover:underline">About Us</a></li>
-          <li><a href="#services" class="text-white hover:underline">Services</a></li>
-          <li><a href="#blog" class="text-white hover:underline">Blog</a></li>
-          <li><a href="#contact" class="text-white hover:underline">Contact Us</a></li>
+        <ul class="flex gap-4">
+          <li><a href="#projects" class="hover:text-red-600 transition duration-300">Projects</a></li>
+          <li><a href="#services" class="hover:text-red-600 transition duration-300">Services</a></li>
+          <li><a href="#about" class="hover:text-red-600 transition duration-300">About Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Banner Section -->
-  <section class="bg-cover bg-center h-64" style="background-image:assets/cyber-security">
-    <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
-      <h1 class="text-white text-4xl font-bold">Hello, we are Red Raven Solutions!</h1>
-    </div>
-  </section>
-
-  <!-- About Us Section -->
-  <section id="about" class="py-12 bg-gray-100">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-4">About Us</h2>
-      <p class="text-gray-600 leading-relaxed">
-        Red Raven Solutions is dedicated to providing cutting-edge software development solutions. 
-      </p>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="py-12 bg-white">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-4">Our Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-gray-200 p-6 rounded-lg">
-          <h3 class="text-xl font-bold mb-2">Threat Detection</h3>
-          <p class="text-gray-600">Stay ahead of cyber threats with our real-time detection and response services.</p>
+  <main class="container mx-auto px-4 py-12">
+    <section id="projects" class="mb-12 animate-slide-up">
+      <h2 class="text-3xl font-semibold mb-6">Our Projects</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="bg-white p-6 shadow rounded-lg transform transition duration-500 hover:scale-105">
+          <h3 class="text-xl font-bold text-red-600 mb-2">SalesPulse CRM</h3>
+          <p>A scalable, Blazor-based CRM application built for growing businesses with advanced deal tracking and analytics.</p>
         </div>
-        <div class="bg-gray-200 p-6 rounded-lg">
-          <h3 class="text-xl font-bold mb-2">Data Encryption</h3>
-          <p class="text-gray-600">Ensure your sensitive data is protected with state-of-the-art encryption technology.</p>
-        </div>
-        <div class="bg-gray-200 p-6 rounded-lg">
-          <h3 class="text-xl font-bold mb-2">Consulting</h3>
-          <p class="text-gray-600">Our experienced consultants provide strategic advice to strengthen your cybersecurity posture.</p>
-        </div>
+       
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Blog Section -->
-  <section id="blog" class="py-12 bg-gray-100">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-4">Latest from Our Blog</h2>
-      <p class="text-gray-600 leading-relaxed">
-        Stay updated with the latest trends, tips, and insights from the world of cybersecurity. Visit our <a href="#" class="text-red-700 hover:underline">Blog</a> for more details.
-      </p>
+   <section id="services" class="mb-12 animate-slide-up delay-100">
+  <h2 class="text-3xl font-semibold mb-6">Our Services</h2>
+  <div class="grid gap-6 md:grid-cols-2">
+    <div class="bg-white dark:bg-gray-800 p-6 shadow rounded-md transform transition duration-500 hover:scale-105">
+      <div class="flex items-center mb-4">
+        <svg class="w-6 h-6 text-red-600 dark:text-red-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+        <h3 class="text-xl font-bold text-red-600 dark:text-red-400">Custom Web Development</h3>
+      </div>
+      <p>We build tailored websites and web apps that are optimized for performance, scalability, and user experience, using the latest technologies and frameworks.</p>
     </div>
-  </section>
-
-  <!-- Contact Us Section -->
-   
-   <section id="contact" class="py-20 bg-gray-100">
-    <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-12">Contact Us</h2>
-        <p class="text-xl mb-8">Have a project in mind? Get in touch with us today!</p>
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-        <script>
-            hbspt.forms.create({
-                region: "na1",
-                portalId: "46481038",
-                formId: "3e9ca3a2-0b88-4977-8810-2a550b90f783"
-            });
-        </script>
+    <div class="bg-white dark:bg-gray-800 p-6 shadow rounded-md transform transition duration-500 hover:scale-105">
+      <div class="flex items-center mb-4">
+        <svg class="w-6 h-6 text-red-600 dark:text-red-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
+        <h3 class="text-xl font-bold text-red-600 dark:text-red-400">Responsive UI/UX Design</h3>
+      </div>
+      <p>Our designs adapt beautifully to any device, ensuring your users have an intuitive and engaging experience whether they're on desktop, tablet, or mobile.</p>
     </div>
+    <div class="bg-white dark:bg-gray-800 p-6 shadow rounded-md transform transition duration-500 hover:scale-105">
+      <div class="flex items-center mb-4">
+        <svg class="w-6 h-6 text-red-600 dark:text-red-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg>
+        <h3 class="text-xl font-bold text-red-600 dark:text-red-400">API Integration and Backend Solutions</h3>
+      </div>
+      <p>From REST to GraphQL, we integrate APIs and develop secure, reliable backend systems that power your business operations with efficiency and flexibility.</p>
+    </div>
+    <div class="bg-white dark:bg-gray-800 p-6 shadow rounded-md transform transition duration-500 hover:scale-105">
+      <div class="flex items-center mb-4">
+        <svg class="w-6 h-6 text-red-600 dark:text-red-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+        <h3 class="text-xl font-bold text-red-600 dark:text-red-400">Maintenance & Support Contracts</h3>
+      </div>
+      <p>We provide ongoing support and maintenance services to keep your digital platforms secure, updated, and functioning smoothly 24/7.</p>
+    </div>
+  </div>
 </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 Red Raven Solutions. All rights reserved.</p>
-    </div>
+
+    <section id="about" class="animate-slide-up delay-200">
+      <h2 class="text-3xl font-semibold mb-6">About Us</h2>
+      <p class="bg-white p-6 shadow rounded-lg">
+        Red Raven Solutions is a web development company dedicated to creating innovative, user-centric digital experiences. With expertise in full-stack development, we empower businesses through custom software solutions tailored to their needs. Our passion lies in blending technology with design to deliver seamless, impactful products.
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white text-center py-6 animate-fade-in">
+    <p>&copy; 2025 Red Raven Solutions. All rights reserved.</p>
   </footer>
 
+  <style>
+    @keyframes fade-in {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .animate-fade-in {
+      animation: fade-in 1s ease-in;
+    }
+
+    @keyframes slide-up {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .animate-slide-up {
+      animation: slide-up 1s ease-out;
+    }
+    .delay-100 {
+      animation-delay: 0.2s;
+    }
+    .delay-200 {
+      animation-delay: 0.4s;
+    }
+  </style>
 </body>
+
 </html>
