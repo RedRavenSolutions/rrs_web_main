@@ -1,22 +1,4 @@
 (() => {
-  // Theme toggle (persists in localStorage)
-  const btn = document.getElementById('themeToggle');
-  const root = document.documentElement;
-  const key = 'rrs-theme';
-  function applyTheme(theme) {
-    if (theme === 'light') root.classList.add('light');
-    else root.classList.remove('light');
-  }
-  const saved = localStorage.getItem(key);
-  if (saved) applyTheme(saved);
-  if (btn) {
-    btn.addEventListener('click', () => {
-      const next = root.classList.contains('light') ? 'dark' : 'light';
-      applyTheme(next);
-      localStorage.setItem(key, next);
-    });
-  }
-
   // Footer year
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
