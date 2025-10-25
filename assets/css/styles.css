@@ -1,0 +1,47 @@
+:root {
+  --brand: #ef4444; /* red-500 */
+  --bg-dark: #0b0f19;
+  --bg-card: rgba(255,255,255,0.06);
+  --ring: rgba(239,68,68,.35);
+}
+
+.bg-body { background: #0b0f19; color: #e5e7eb; }
+.bg-body .text-secondary { color: #9ca3af !important; }
+
+.navbar-dark .navbar-brand span { letter-spacing: .2px; }
+.link-light-underline { color: #e5e7eb; }
+.link-light-underline:hover { text-decoration: underline; }
+
+.hero { background: radial-gradient(1200px 600px at 10% 10%, rgba(239,68,68,.25), transparent 60%), radial-gradient(1200px 600px at 90% 20%, rgba(59,130,246,.25), transparent 60%), linear-gradient(180deg, #0b0f19 0%, #0b0f19 100%); }
+.gradient-1 { background: linear-gradient(180deg, #111827 0%, #0b0f19 100%); }
+.gradient-2 { background: linear-gradient(180deg, #ef4444 0%, #991b1b 100%); }
+.gradient-3 { background: linear-gradient(180deg, #3b82f6 0%, #1e3a8a 100%); }
+.gradient-4 { background: linear-gradient(180deg, #10b981 0%, #065f46 100%); }
+
+.glass-card { background: var(--bg-card); border: 1px solid rgba(255,255,255,.1); border-radius: 1rem; backdrop-filter: blur(6px); }
+.check { width: 1.1rem; height: 1.1rem; border-radius: .35rem; background: linear-gradient(135deg, var(--brand), #dc2626); box-shadow: 0 0 0 4px var(--ring); display: inline-block; flex: none; margin-top: .2rem; }
+
+.card.hover-rise { transition: transform .25s ease, box-shadow .25s ease; }
+.card.hover-rise:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.35); }
+
+.small-90 { font-size: .9rem; }
+
+/* Stats */
+.stat-card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: .75rem; padding: 1rem 1.25rem; }
+.stat-card .stat { font-size: 2rem; font-weight: 800; line-height: 1; }
+.stat-card .label { color: #9ca3af; }
+
+/* Decorative */
+.bg-shape { position: absolute; inset: auto -10% -30% -10%; height: 360px; background: radial-gradient(50% 50% at 50% 50%, rgba(239,68,68,.15), transparent 70%); transform: rotate(-6deg); }
+
+/* Light theme overrides */
+.light body, .light .bg-body { background: #ffffff; color: #111827; }
+.light .bg-body .text-secondary { color: #4b5563 !important; }
+.light .glass-card { background: rgba(0,0,0,.03); border-color: rgba(0,0,0,.08); }
+.light footer { background: #0b0f19 !important; color: #e5e7eb; }
+
+/* Forms */
+form .form-control:focus { box-shadow: 0 0 0 .25rem rgba(239,68,68,.25); border-color: #ef4444; }
+
+/* Utilities */
+.py-lg-6 { padding-top: 5rem !important; padding-bottom: 5rem !important; }
