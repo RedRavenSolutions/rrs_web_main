@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Preparing for a penetration test: a one-page checklist • Red Raven Solutions</title>
+  <title>Red Team vs. Penetration Test • Red Raven Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="How to prepare your teams, scope, and environment for a successful penetration test.">
+  <meta name="description" content="Understand the difference between red teaming and penetration testing, and how to choose the right approach for your organization.">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
@@ -15,12 +15,13 @@
   <nav class="navbar navbar-expand-lg navbar-light py-3">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="../index.html">
-        <img src="../assets/img/favicon.svg" alt="" width="28" height="28" class="me-2">
+        <img src="../assets/img/favicon.svg" alt="Red Raven logo" width="28" height="28" class="me-2">
         <span class="fw-bold">Red Raven <span class="text-rrs">Solutions</span></span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rrsNav" aria-controls="rrsNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="rrsNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
@@ -40,188 +41,210 @@
 </header>
 
 <main>
+  <!-- Header band -->
   <section class="py-5 bg-light border-bottom">
     <div class="container">
-      <p class="small text-muted mb-1">
-        Blog &middot; Guide
-      </p>
-      <h1 class="h2 fw-bold mb-2">Preparing for a red team test: a one-page checklist</h1>
+      <h1 class="h2 fw-bold mb-2">Red Team vs. Penetration Test: Which Do You Actually Need?</h1>
       <p class="text-muted mb-0">
-        Help your next test land cleanly by getting scope, expectations, and logistics
-        aligned before anyone runs a single payload.
+        Both are valuable, but they answer different questions. Here’s how to tell
+        which one fits your current goals and maturity.
       </p>
+      <div class="small text-muted mt-2">Published: Nov 2025 • 7-minute read</div>
     </div>
   </section>
 
-  <section class="py-5">
+  <!-- Orange wave -->
+  <div class="rrs-wave rrs-wave-orange"></div>
+
+  <!-- Blog content -->
+  <section class="py-5 bg-white">
     <div class="container">
-      <div class="row g-4">
+      <div class="row g-5">
+        <!-- Article -->
         <div class="col-lg-8">
-          <article class="bg-white p-4 p-md-5 rounded-3 border">
-            <h2 class="h4 mb-3">Why this distinction matters</h2>
-<p>
-  “We need a red team” and “We need a penetration test” are phrases that get used
-  interchangeably—but they describe <strong>very different</strong> types of work.
-  Picking the wrong one can waste budget, confuse stakeholders, and leave real
-  gaps untouched.
-</p>
-<p>
-  This guide is written for security leaders, IT directors, and CTOs who need to
-  choose the right approach (and explain that choice to others).
-</p>
+          <article class="blog-post">
+            <h2 class="h4 fw-bold mb-3">Why the distinction matters</h2>
+            <p class="text-muted">
+              “We need a red team” and “We need a penetration test” get thrown around
+              interchangeably. But they describe <strong>very different kinds of work</strong>.
+              Choosing the wrong one can waste budget, confuse stakeholders, and leave real
+              gaps untouched.
+            </p>
+            <p class="text-muted">
+              This guide is meant to help security leaders, IT directors, and CTOs explain
+              the difference in plain language—and pick the right option for where you are
+              today.
+            </p>
 
-<hr class="my-4">
+            <hr class="my-4">
 
-<h2 class="h5 mb-3">What is a penetration test?</h2>
-<p>
-  A penetration test is a <strong>focused, time-boxed assessment</strong> of systems,
-  applications, or networks. The goal is to identify and validate vulnerabilities,
-  then deliver clear findings and remediation guidance.
-</p>
-<ul class="text-muted small">
-  <li><strong>Scope:</strong> clearly defined (apps, IP ranges, APIs, cloud accounts).</li>
-  <li><strong>Objective:</strong> find exploitable weaknesses and demonstrate impact.</li>
-  <li><strong>Style:</strong> typically collaborative; testers talk to your team.</li>
-  <li><strong>Outputs:</strong> list of findings, risk ratings, and recommended fixes.</li>
-  <li><strong>Best for:</strong> improving technical security posture and hygiene.</li>
-</ul>
+            <h3 class="h5 fw-bold mb-3">What is a penetration test?</h3>
+            <p class="text-muted">
+              A penetration test is a <strong>focused, time-boxed assessment</strong> of systems,
+              applications, or networks. The primary goal is to identify and validate
+              vulnerabilities, then provide clear guidance on how to fix them.
+            </p>
+            <ul class="text-muted small mb-4">
+              <li><strong>Scope:</strong> clearly defined (apps, IP ranges, APIs, cloud accounts).</li>
+              <li><strong>Objective:</strong> find exploitable weaknesses and demonstrate impact.</li>
+              <li><strong>Style:</strong> often collaborative; testers talk openly with your team.</li>
+              <li><strong>Outputs:</strong> list of findings, risk ratings, and remediation steps.</li>
+              <li><strong>Best for:</strong> improving technical security posture and hygiene.</li>
+            </ul>
 
-<h2 class="h5 mb-3">What is a red team?</h2>
-<p>
-  A red team engagement is an <strong>adversary emulation exercise</strong>. Instead of
-  asking “what vulnerabilities exist?”, it asks “how would a real attacker try
-  to achieve their goals against us?” and “how well would we detect and respond?”
-</p>
-<ul class="text-muted small">
-  <li><strong>Scope:</strong> broader, often objective-based (“obtain X data”, “persist in Y environment”).</li>
-  <li><strong>Objective:</strong> test people, processes, and technology together.</li>
-  <li><strong>Style:</strong> often stealthier; usually only a small group is aware.</li>
-  <li><strong>Outputs:</strong> narratives of attack paths, detection gaps, and response performance.</li>
-  <li><strong>Best for:</strong> mature programs that want to validate detection/response.</li>
-</ul>
+            <h3 class="h5 fw-bold mb-3">What is a red team engagement?</h3>
+            <p class="text-muted">
+              A red team engagement is an <strong>adversary emulation exercise</strong>. Instead of
+              asking “what vulnerabilities exist?”, it asks “how would a real attacker try to
+              achieve their goals against us, and how would we detect/respond?”.
+            </p>
+            <ul class="text-muted small mb-4">
+              <li><strong>Scope:</strong> broader and objective-based (“obtain X data”, “persist in Y environment”).</li>
+              <li><strong>Objective:</strong> test people, processes, and technology together.</li>
+              <li><strong>Style:</strong> typically stealthier; only a small group is aware.</li>
+              <li><strong>Outputs:</strong> narratives of attack paths, detection gaps, and response performance.</li>
+              <li><strong>Best for:</strong> mature programs that want to validate detection and response.</li>
+            </ul>
 
-<div class="border rounded p-3 bg-light small mb-4">
-  <strong>Short version:</strong> penetration tests focus on <em>finding</em> vulnerabilities.  
-  Red teams focus on <em>using</em> them (and everything else) to exercise your whole defense.
-</div>
+            <div class="alert alert-light border small">
+              💡 <strong>Short version:</strong> penetration tests focus on <em>finding</em> vulnerabilities.  
+              Red teams focus on <em>using</em> them (and other techniques) to exercise your entire defense.
+            </div>
 
-<h2 class="h5 mb-3">Key differences at a glance</h2>
+            <h3 class="h5 fw-bold mt-5 mb-3">Key differences at a glance</h3>
+            <div class="table-responsive mb-4">
+              <table class="table table-sm align-middle small">
+                <thead>
+                  <tr>
+                    <th>Dimension</th>
+                    <th>Penetration Test</th>
+                    <th>Red Team Engagement</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Primary goal</strong></td>
+                    <td>Find and validate vulnerabilities in a defined scope.</td>
+                    <td>Test end-to-end ability to detect and respond to realistic attacks.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Scope</strong></td>
+                    <td>Specific systems, apps, networks, or environments.</td>
+                    <td>Objective-based, often spanning multiple systems and paths.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Stealth</strong></td>
+                    <td>Usually lower; collaboration is common.</td>
+                    <td>Usually higher; limited awareness to mimic real adversaries.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>Typically 1–4 weeks.</td>
+                    <td>Often 4–12+ weeks.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Outputs</strong></td>
+                    <td>Findings, proofs-of-concept, remediation guidance.</td>
+                    <td>Attack narratives, detection/response evaluation, improvement plan.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Prerequisites</strong></td>
+                    <td>Basic logging, asset ownership, and remediation capacity.</td>
+                    <td>Established SOC/monitoring and incident response process.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-<table class="table table-sm small align-middle mb-4">
-  <thead>
-    <tr>
-      <th>Dimension</th>
-      <th>Penetration test</th>
-      <th>Red team engagement</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Primary goal</strong></td>
-      <td>Find and validate vulnerabilities in defined scope.</td>
-      <td>Test the end-to-end ability to detect and respond to real attacks.</td>
-    </tr>
-    <tr>
-      <td><strong>Scope</strong></td>
-      <td>Specific systems, apps, networks, environments.</td>
-      <td>Objective-based; may span multiple systems and attack paths.</td>
-    </tr>
-    <tr>
-      <td><strong>Stealth</strong></td>
-      <td>Usually lower; collaboration with defenders is common.</td>
-      <td>Often higher; limited awareness to simulate real adversary behavior.</td>
-    </tr>
-    <tr>
-      <td><strong>Duration</strong></td>
-      <td>Typically 1–4 weeks.</td>
-      <td>Often 4–12+ weeks, depending on depth and objectives.</td>
-    </tr>
-    <tr>
-      <td><strong>Outputs</strong></td>
-      <td>Findings list, exploits, remediation guidance.</td>
-      <td>Attack narratives, detection/response evaluation, improvement plan.</td>
-    </tr>
-    <tr>
-      <td><strong>Prerequisites</strong></td>
-      <td>Basic logging and remediation capacity.</td>
-      <td>Established security operations and incident response processes.</td>
-    </tr>
-  </tbody>
-</table>
+            <h3 class="h5 fw-bold mt-4 mb-3">You probably want a penetration test if…</h3>
+            <ul class="text-muted small mb-4">
+              <li>You have <strong>new or significantly changed systems</strong> (apps, APIs, infra, cloud).</li>
+              <li>You need to <strong>reduce known technical risk</strong> and get a prioritized list of fixes.</li>
+              <li>Your logging and detection are still maturing.</li>
+              <li>Engineering capacity is limited, so you need clear, focused findings.</li>
+              <li>You’re working toward <strong>compliance requirements</strong> that call for technical testing.</li>
+            </ul>
 
-<h2 class="h5 mb-3">How to decide what you actually need</h2>
-<p>
-  Use the questions below to guide the conversation with your team and leadership.
-</p>
+            <h3 class="h5 fw-bold mb-3">You might be ready for a red team if…</h3>
+            <ul class="text-muted small mb-4">
+              <li>You already run penetration tests on a regular basis.</li>
+              <li>You have a <strong>SOC or active monitoring</strong> team.</li>
+              <li>You want to understand <strong>detection gaps, response time, and playbook quality</strong>.</li>
+              <li>You’re asking questions like “Could someone quietly persist in our environment for months?”</li>
+              <li>Leadership is ready to act on narrative, scenario-based outcomes—not just a list of CVEs.</li>
+            </ul>
 
-<h3 class="h6 mt-4">You probably want a penetration test if:</h3>
-<ul class="small text-muted">
-  <li>You have <strong>new or significantly changed systems</strong> (apps, APIs, infra, cloud).</li>
-  <li>You need to <strong>reduce known technical risk</strong> and get a prioritized list of fixes.</li>
-  <li>Your logging and detection are limited or still being built.</li>
-  <li>Remediation capacity is already stretched—so you need clear, focused findings.</li>
-  <li>You’re working toward <strong>compliance requirements</strong> that call for technical testing.</li>
-</ul>
+            <h3 class="h5 fw-bold mb-3">The middle ground: purple-team exercises</h3>
+            <p class="text-muted">
+              There’s also a third option: <strong>purple-team exercises</strong>, where offensive
+              and defensive teams work together in near real-time.
+            </p>
+            <ul class="text-muted small mb-4">
+              <li>Red-team style techniques, but openly coordinated with defenders.</li>
+              <li>Each technique is paired with “Did we see this? If not, how do we detect it next time?”</li>
+              <li>Great for quickly improving detections and building shared understanding.</li>
+            </ul>
+            <p class="text-muted">
+              For many organizations, a structured purple-team series is a better first step
+              than a fully stealth red team.
+            </p>
 
-<h3 class="h6 mt-4">You might be ready for a red team if:</h3>
-<ul class="small text-muted">
-  <li>You already perform penetration tests on a regular basis.</li>
-  <li>You have a <strong>security operations center (SOC)</strong> or team actively monitoring alerts.</li>
-  <li>You want to understand <strong>detection gaps and response performance</strong>, not just vulnerabilities.</li>
-  <li>You’re asking questions like “Could someone quietly persist in our environment for months?”</li>
-  <li>Leadership is prepared to act on narrative, scenario-based outcomes—not a long list of CVEs.</li>
-</ul>
+            <h3 class="h5 fw-bold mt-5 mb-3">How to explain the choice to leadership</h3>
+            <p class="text-muted small mb-2">
+              Keep it outcome-focused. Examples:
+            </p>
+            <ul class="text-muted small mb-4">
+              <li><strong>If we choose a penetration test:</strong> “We’ll get a prioritized list of
+                weaknesses in &lt;scope&gt;, understand their impact, and have clear fixes for engineering.”
+              </li>
+              <li><strong>If we choose a red team:</strong> “We’ll learn how a realistic attacker would try
+                to achieve specific goals, and how well our people, processes, and tools respond.”</li>
+            </ul>
 
-<h2 class="h5 mb-3">A third option: collaborative purple-team exercises</h2>
-<p>
-  There’s also a middle tier: <strong>purple-team exercises</strong>, where offensive and
-  defensive teams work together in near real-time.
-</p>
-<ul class="small text-muted mb-3">
-  <li>Red-team style techniques, but openly coordinated with defenders.</li>
-  <li>Each tactic is paired with a discussion: “Did we detect this? If not, how can we?”</li>
-  <li>Great for building shared understanding and improving detection content quickly.</li>
-</ul>
-<p class="small text-muted">
-  For many organizations, a structured purple-team series is a better first step
-  than a pure stealth red team.
-</p>
+            <p class="text-muted">
+              Both are useful. The “right” one is the one that aligns with your maturity, your capacity
+              to act on the results, and the decisions you need to make in the next 6–12 months.
+            </p>
 
-<hr class="my-4">
-
-<h2 class="h5 mb-3">How to explain the choice to leadership</h2>
-<p>
-  When briefing non-technical stakeholders, keep it outcome-focused:
-</p>
-<ul class="small text-muted">
-  <li><strong>If we choose a penetration test:</strong>  
-    “We’ll get a prioritized list of weaknesses in &lt;scope&gt;, understand
-     their impact, and have clear fixes for engineering.”
-  </li>
-  <li><strong>If we choose a red team:</strong>  
-    “We’ll learn how a realistic attacker would try to achieve specific goals
-     and how well our people, processes, and tools respond.”
-  </li>
-</ul>
-
-<p class="small text-muted">
-  Both are valuable, but in different ways. The right choice is the one that
-  matches your current maturity, capacity, and the decisions you need to make
-  in the next 6–12 months.
-</p>
-
+            <div class="border-top mt-5 pt-4">
+              <p class="small text-muted mb-1">Written by:</p>
+              <p class="fw-semibold mb-0">Chris Coppock — Founder, Red Raven Solutions</p>
+            </div>
           </article>
         </div>
-        <div class="col-lg-4">
-          <aside class="rrs-side-card">
-            <h2 class="h6 text-uppercase text-muted mb-3">Share this</h2>
-            <p class="small text-muted mb-2">
-              Many teams use this checklist as part of their internal runbook before
-              a test. Feel free to share or adapt it.
+
+        <!-- Sidebar -->
+        <aside class="col-lg-4">
+          <div class="rrs-side-card mb-4">
+            <h3 class="h6 text-uppercase text-muted mb-3">Related Posts</h3>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li class="mb-2">
+                <a href="pen-test-checklist.html" class="link-secondary text-decoration-none">
+                  Preparing for a penetration test
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="exec-readout-template.html" class="link-secondary text-decoration-none">
+                  Executive read-out template
+                </a>
+              </li>
+              <li>
+                <a href="../services.html" class="link-secondary text-decoration-none">
+                  Our penetration testing services →
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="rrs-side-card small text-muted">
+            <p class="mb-2 fw-semibold text-uppercase text-muted">Not sure where to start?</p>
+            <p class="mb-2">
+              We can help you decide whether a penetration test, red team, or purple-team
+              engagement is the best next step for your organization.
             </p>
-            <a href="../blog.html" class="small link-rrs">← Back to all resources</a>
-          </aside>
-        </div>
+            <a href="../contact.html" class="btn btn-rrs btn-sm w-100">Talk to Red Raven</a>
+          </div>
+        </aside>
       </div>
     </div>
   </section>
