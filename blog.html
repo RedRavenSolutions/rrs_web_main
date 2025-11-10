@@ -15,14 +15,14 @@
   <nav class="navbar navbar-expand-lg navbar-light py-3">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/img/favicon.svg" alt="" width="28" height="28" class="me-2">
+        <img src="assets/img/favicon.svg" alt="Red Raven logo" width="28" height="28" class="me-2">
         <span class="fw-bold">Red Raven <span class="text-rrs">Solutions</span></span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rrsNav" aria-controls="rrsNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-            <div class="collapse navbar-collapse" id="rrsNav">
+      <div class="collapse navbar-collapse" id="rrsNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Cybersecurity Services</a></li>
@@ -31,13 +31,9 @@
           <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-
         <div class="d-flex flex-column flex-lg-row gap-2 ms-lg-3 mt-3 mt-lg-0">
           <a href="contact.html" class="btn btn-rrs">Talk to an expert</a>
           <a href="contact.html#breach" class="btn btn-outline-danger btn-sm">Report a breach</a>
-        </div>
-      </div>
-
         </div>
       </div>
     </div>
@@ -45,6 +41,7 @@
 </header>
 
 <main>
+  <!-- Header band -->
   <section class="py-5 bg-light border-bottom">
     <div class="container">
       <h1 class="h2 fw-bold mb-2">Blog &amp; Resources</h1>
@@ -54,56 +51,96 @@
     </div>
   </section>
 
-  <section class="py-5">
+  <!-- Orange wave divider -->
+  <div class="rrs-wave rrs-wave-orange"></div>
+
+  <!-- Main content -->
+  <section class="py-5 bg-white">
     <div class="container">
+      <!-- Filter / intro row (future-proofing) -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-2">
+        <p class="text-muted mb-0 small">
+          You’ll find guides, templates, and explainers focused on making security work more actionable.
+        </p>
+        <!-- You can hook this up later to filtering -->
+        <div class="d-flex gap-2">
+          <button type="button" class="btn btn-outline-secondary btn-sm">All</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm">Guides</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm">Articles</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm">Templates</button>
+        </div>
+      </div>
+
       <div class="row g-4">
-        <div class="col-md-4">
-          <article class="rrs-card h-100">
+        <!-- Post 1: Pen-test checklist -->
+        <div class="col-md-6 col-lg-4">
+          <article class="rrs-card h-100 d-flex flex-column">
             <div class="small text-muted mb-1">Guide</div>
             <h2 class="h5 mb-2">
               <a href="blog/pen-test-checklist.html" class="link-rrs text-decoration-none">
                 Preparing for a penetration test: a one-page checklist
               </a>
             </h2>
-            <p class="small text-muted mb-3">
-              How to get your teams, scope, and expectations aligned so your next test
-              delivers maximum signal and minimum chaos.
+            <p class="small text-muted mb-3 flex-grow-1">
+              How to prepare your teams, scope, and environment so your next test delivers
+              maximum signal and minimum chaos.
             </p>
-            <div class="small text-muted">~5 minute read</div>
+            <div class="d-flex justify-content-between align-items-center small text-muted">
+              <span>~5 minute read</span>
+              <span>Guide</span>
+            </div>
           </article>
         </div>
 
-        <div class="col-md-4">
-          <article class="rrs-card h-100">
+        <!-- Post 2: Red team vs. pen-test -->
+        <div class="col-md-6 col-lg-4">
+          <article class="rrs-card h-100 d-flex flex-column">
             <div class="small text-muted mb-1">Article</div>
             <h2 class="h5 mb-2">
               <a href="blog/red-team-vs-pen-test.html" class="link-rrs text-decoration-none">
                 Red team vs. penetration test: which do you actually need?
               </a>
             </h2>
-            <p class="small text-muted mb-3">
-              A plain-language breakdown you can use with leadership to pick the right
-              approach for your goals, timeline, and budget.
+            <p class="small text-muted mb-3 flex-grow-1">
+              A plain-language breakdown to help you and your leadership team decide
+              which approach fits your goals, timeline, and maturity.
             </p>
-            <div class="small text-muted">~7 minute read</div>
+            <div class="d-flex justify-content-between align-items-center small text-muted">
+              <span>~7 minute read</span>
+              <span>Article</span>
+            </div>
           </article>
         </div>
 
-        <div class="col-md-4">
-          <article class="rrs-card h-100">
+        <!-- Post 3: Exec read-out template -->
+        <div class="col-md-6 col-lg-4">
+          <article class="rrs-card h-100 d-flex flex-column">
             <div class="small text-muted mb-1">Template</div>
             <h2 class="h5 mb-2">
               <a href="blog/exec-readout-template.html" class="link-rrs text-decoration-none">
                 An executive read-out template for security testing
               </a>
             </h2>
-            <p class="small text-muted mb-3">
+            <p class="small text-muted mb-3 flex-grow-1">
               A simple slide structure for turning technical findings into a concise,
-              decision-friendly story for executives.
+              decision-ready story for executives.
             </p>
-            <div class="small text-muted">Template + notes</div>
+            <div class="d-flex justify-content-between align-items-center small text-muted">
+              <span>Template + notes</span>
+              <span>Template</span>
+            </div>
           </article>
         </div>
+      </div>
+
+      <!-- Future “More posts” section -->
+      <div class="mt-5 border-top pt-4">
+        <p class="small text-muted mb-2">
+          As we publish more, we’ll group posts by topic (testing, red teaming, advisory, leadership).
+        </p>
+        <a href="contact.html" class="small link-rrs">
+          Want us to cover something specific? Let us know →
+        </a>
       </div>
     </div>
   </section>
