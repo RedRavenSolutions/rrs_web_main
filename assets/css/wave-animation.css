@@ -1,0 +1,8 @@
+svg path {
+  transform-origin: center;
+  animation: waveMove 8s ease-in-out infinite alternate;
+}
+@keyframes waveMove {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(5px); }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="rrsGradient" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#rrsGradient)" d="M0,64L1440,0L1440,100L0,100Z"></path>
+</svg>

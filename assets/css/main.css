@@ -157,13 +157,10 @@ html, body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(11, 15, 25, 0.6); /* dark overlay for contrast */
+  background: rgba(11,15,25,0.6);
 }
 
-.bg-hero > .container {
-  position: relative;
-  z-index: 1;
-}
+.bg-hero > .container { position: relative; z-index: 1; }
 
 .btn-rrs {
   background-color: #c53030;
@@ -172,4 +169,83 @@ html, body {
 }
 .btn-rrs:hover {
   background-color: #a31e1e;
+}
+
+.bg-mesh {
+  background: url("../img/bg-mesh.png") center/cover no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.btn-rrs:hover {
+  box-shadow: 0 0 15px rgba(255,70,70,0.5);
+}
+
+section { transition: background 0.5s ease-in-out, color 0.5s ease-in-out; }
+
+.py-6 { padding-top: 6rem; padding-bottom: 6rem; }
+
+
+/* Generic wave strip */
+.rrs-wave {
+  width: 100%;
+  height: 80px;              /* adjust thickness */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center bottom;
+  display: block;
+}
+
+/* Variants */
+.rrs-wave-red {
+  background-image: url("../svg/divider-red.svg");
+}
+
+.rrs-wave-orange {
+  background-image: url("../svg/divider-orange.svg");
+}
+
+.rrs-wave-dark {
+  background-image: url("../svg/divider-dark.svg");
+}
+
+.section-wave-top,
+.section-wave-bottom {
+  position: relative;
+  z-index: 0;
+}
+
+.section-wave-top::before,
+.section-wave-bottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: -1;
+}
+
+/* top vs bottom placement */
+.section-wave-top::before {
+  top: -79px;
+}
+.section-wave-bottom::after {
+  bottom: -79px;
+}
+
+/* color variants */
+.section-wave-red::before,
+.section-wave-red::after {
+  background-image: url("../svg/divider-red.svg");
+}
+.section-wave-orange::before,
+.section-wave-orange::after {
+  background-image: url("../svg/divider-orange.svg");
+}
+.section-wave-dark::before,
+.section-wave-dark::after {
+  background-image: url("../svg/divider-dark.svg");
 }

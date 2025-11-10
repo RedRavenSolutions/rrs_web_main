@@ -21,6 +21,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rrsNav" aria-controls="rrsNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="rrsNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -30,49 +31,63 @@
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        <a href="contact.html" class="btn btn-rrs ms-lg-3 mt-3 mt-lg-0">Request a demo</a>
-      <a href="contact.html#breach" class="btn btn-outline-danger btn-sm">Report a breach</a>
+        <div class="d-flex flex-column flex-lg-row gap-2 ms-lg-3 mt-3 mt-lg-0">
+          <a href="contact.html" class="btn btn-rrs">Talk to an expert</a>
+          <a href="contact.html#breach" class="btn btn-outline-danger btn-sm">Report a breach</a>
+        </div>
       </div>
     </div>
   </nav>
 </header>
 
 <main>
-  <section class="py-5 bg-hero-soft border-bottom">
+  <!-- Header band -->
+  <section class="py-5 bg-light border-bottom">
     <div class="container">
-      <div class="row g-4 align-items-center">
+      <h1 class="h2 fw-bold mb-2">Aegis</h1>
+      <p class="text-muted mb-0">
+        A lightweight operations accelerator for security teams: playbooks, automations,
+        and reporting patterns that shorten the path from findings to fixes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Orange wave divider -->
+  <div class="rrs-wave rrs-wave-orange"></div>
+
+  <!-- Main Aegis content -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row g-4 align-items-start mb-4">
         <div class="col-lg-7">
-          <h1 class="h2 fw-bold mb-2">Aegis</h1>
-          <p class="lead text-muted mb-3">
-            A lightweight operations accelerator for security teams: playbooks, automations,
-            and reporting patterns that shorten the path from findings to fixes.
+          <p class="text-muted">
+            Aegis is designed to sit alongside your scanners, SIEM, EDR, and ticketing systems.
+            Instead of being yet another platform to log into, it provides structure and glue:
+            engagement playbooks, evidence patterns, and simple hooks into the tools you already use.
           </p>
-          <ul class="text-muted small mb-3">
+          <ul class="small text-muted mb-3">
             <li>Standardized engagement runbooks and checklists</li>
             <li>Integration-friendly hooks into your existing tooling</li>
             <li>Reusable reporting components for execs and engineers</li>
           </ul>
-          <a href="contact.html" class="btn btn-rrs">Join the Aegis waitlist</a>
+          <a href="contact.html" class="btn btn-rrs me-2 mb-2">Join the Aegis waitlist</a>
+          <a href="blog.html" class="btn btn-outline-secondary btn-sm mb-2">Read related articles</a>
         </div>
         <div class="col-lg-5">
-          <div class="rrs-hero-card shadow-sm">
+          <div class="rrs-side-card">
             <h2 class="h6 text-uppercase text-muted mb-3">How Aegis fits</h2>
             <p class="small text-muted mb-2">
-              Aegis is designed to sit alongside your scanners, SIEM, and ticketing systems.
+              Aegis is meant to simplify “findings to fixes” across multiple tools and teams.
             </p>
             <ul class="small text-muted mb-0">
-              <li>Inputs: scanner exports, notes, screenshots, logs</li>
-              <li>Outputs: tickets, dashboards, reports, metrics</li>
-              <li>Integrations: Jira, GitHub, GitLab, Slack/Teams (via simple hooks)</li>
+              <li><strong>Inputs:</strong> scanner exports, notes, screenshots, logs</li>
+              <li><strong>Outputs:</strong> tickets, dashboards, reports, metrics</li>
+              <li><strong>Integrations:</strong> Jira, GitHub, GitLab, Slack/Teams (via simple hooks)</li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="py-5">
-    <div class="container">
       <div class="row g-4">
         <div class="col-md-4">
           <div class="rrs-card h-100">
@@ -88,7 +103,8 @@
             <h3 class="h5">Automation Hooks</h3>
             <p class="small text-muted">
               Simple, transparent hooks to push issues into ticketing systems,
-              update dashboards, and notify the right channels.
+              update dashboards, and notify the right channels without hiding
+              behind opaque magic.
             </p>
           </div>
         </div>
@@ -116,12 +132,15 @@
         </div>
         <div class="col-lg-5">
           <div class="rrs-side-card h-100">
-            <h3 class="h6 text-uppercase text-muted mb-3">Interested?</h3>
+            <h3 class="h6 text-uppercase text-muted mb-3">Interested in shaping Aegis?</h3>
             <p class="small text-muted">
-              If you’d like to shape Aegis with us, we’re looking for a small group of
-              design partners who care about reducing friction between security and delivery.
+              We’re looking for a small group of design partners who care about
+              reducing friction between security and delivery. If that sounds like you,
+              we’d love to talk.
             </p>
-            <a href="contact.html" class="btn btn-outline-secondary btn-sm w-100">Apply as a design partner</a>
+            <a href="contact.html" class="btn btn-outline-secondary btn-sm w-100">
+              Apply as a design partner
+            </a>
           </div>
         </div>
       </div>

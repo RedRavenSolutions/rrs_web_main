@@ -21,6 +21,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rrsNav" aria-controls="rrsNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="rrsNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -30,14 +31,17 @@
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        <a href="contact.html" class="btn btn-rrs ms-lg-3 mt-3 mt-lg-0">Talk to an expert</a>
-      <a href="contact.html#breach" class="btn btn-outline-danger btn-sm">Report a breach</a>
+        <div class="d-flex flex-column flex-lg-row gap-2 ms-lg-3 mt-3 mt-lg-0">
+          <a href="contact.html" class="btn btn-rrs">Talk to an expert</a>
+          <a href="contact.html#breach" class="btn btn-outline-danger btn-sm">Report a breach</a>
+        </div>
       </div>
     </div>
   </nav>
 </header>
 
 <main>
+  <!-- Header band -->
   <section class="py-5 bg-light border-bottom">
     <div class="container">
       <h1 class="h2 fw-bold mb-2">Cybersecurity Services</h1>
@@ -47,54 +51,57 @@
     </div>
   </section>
 
-  <section class="py-5">
+  <!-- Orange wave divider -->
+  <div class="rrs-wave rrs-wave-orange"></div>
+
+  <!-- Main services content -->
+  <section class="py-5 bg-white">
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-8">
           <article id="penetration-testing" class="mb-5">
             <h2 class="h4 fw-bold mb-2">Penetration Testing</h2>
             <p class="text-muted">
-  External, internal, wireless, and cloud testing aligned to OWASP and industry
-  benchmarks. Every finding is reproducible, mapped to risk, and paired with
-  remediation guidance your engineers can actually use.
-</p>
-<ul class="text-muted small">
-  <li>Web and API testing with OWASP ASVS / API Top 10 awareness</li>
-  <li>Internal / Active Directory assessments and lateral movement paths</li>
-  <li>Cloud configuration and identity reviews (AWS, Azure, hybrid)</li>
-  <li>Optional retesting windows to confirm fixes</li>
-</ul>
+              External, internal, wireless, and cloud testing aligned to OWASP and industry
+              benchmarks. Every finding is reproducible, mapped to risk, and paired with
+              remediation guidance your engineers can actually use.
+            </p>
+            <ul class="text-muted small">
+              <li>Web and API testing with OWASP ASVS / API Top 10 awareness</li>
+              <li>Internal / Active Directory assessments and lateral movement paths</li>
+              <li>Cloud configuration and identity reviews (AWS, Azure, hybrid)</li>
+              <li>Optional retesting windows to confirm fixes</li>
+            </ul>
           </article>
 
           <article id="red-team" class="mb-5">
             <h2 class="h4 fw-bold mb-2">Red &amp; Purple Teaming</h2>
             <p class="text-muted">
-  Adversary emulation across the kill chain, mapped to MITRE ATT&amp;CK. We partner
-  with your defenders to sharpen detection, response, and communication—
-  not just “score” your controls.
-</p>
-<ul class="text-muted small">
-  <li>Scenarios shaped by your threat model and current maturity</li>
-  <li>Initial access (phishing, web, VPN) and post-exploitation tradecraft</li>
-  <li>Purple-team working sessions for detection and hunting</li>
-  <li>Lessons-learned, backlog creation, and follow-up coaching</li>
-</ul>
-
+              Adversary emulation across the kill chain, mapped to MITRE ATT&amp;CK. We partner
+              with your defenders to sharpen detection, response, and communication—rather than
+              simply “scoring” your controls.
+            </p>
+            <ul class="text-muted small">
+              <li>Scenarios shaped by your threat model and current maturity</li>
+              <li>Initial access (phishing, web, VPN) and post-exploitation tradecraft</li>
+              <li>Purple-team working sessions for detection and hunting</li>
+              <li>Lessons-learned, backlog creation, and follow-up coaching</li>
+            </ul>
           </article>
 
           <article id="advisory" class="mb-5">
             <h2 class="h4 fw-bold mb-2">Advisory &amp; Readiness</h2>
             <p class="text-muted">
-  Strategic support to connect your security roadmap to your business roadmap.
-  We help you decide what to do now, what to defer, and what to ignore.
-</p>
-<ul class="text-muted small">
-  <li>Security architecture and roadmap development</li>
-  <li>Program assessments and gap analysis tied to business risk</li>
-  <li>Incident response readiness and tabletop exercises</li>
-  <li>Coaching and sounding board for security and technical leaders</li>
-</ul>
-
+              Strategic support to connect your security roadmap to your business roadmap.
+              We help you decide what to do now, what to defer, and what to deliberately
+              accept as risk.
+            </p>
+            <ul class="text-muted small">
+              <li>Security architecture and roadmap development</li>
+              <li>Program assessments and gap analysis tied to business risk</li>
+              <li>Incident response readiness and tabletop exercises</li>
+              <li>Coaching and sounding board for security and technical leaders</li>
+            </ul>
           </article>
         </div>
 
@@ -110,7 +117,10 @@
               Every engagement includes a clear scope, communication plan, and executive
               read-out tailored to your stakeholders.
             </p>
-            <a href="contact.html" class="btn btn-rrs w-100">Get a custom quote</a>
+            <a href="contact.html" class="btn btn-rrs w-100 mb-2">Get a custom quote</a>
+            <a href="blog.html" class="btn btn-outline-secondary btn-sm w-100">
+              View our preparation checklist
+            </a>
           </aside>
         </div>
       </div>
