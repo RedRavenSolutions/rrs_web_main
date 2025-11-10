@@ -140,3 +140,8 @@ html, body {
     margin-top: 1rem;
   }
 }
+
+.btn-outline-danger.btn-sm {
+  border-radius: 999px;
+  padding-inline: 1rem;
+}
