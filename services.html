@@ -2,131 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cybersecurity Services • Red Raven Solutions</title>
-  <meta name="description" content="Red Raven Solutions — cyber security services, red teaming, and advisory.">
-  <meta property="og:title" content="Cybersecurity Services • Red Raven Solutions">
-  <meta property="og:description" content="Cybersecurity services for modern organizations.">
-  <meta property="og:image" content="/assets/img/og-image.png">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#111827">
-  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" sizes="32x32" href="/assets/img/favicon-32.png" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Penetration testing, red teaming, and security advisory services from Red Raven Solutions.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body class="bg-body">
-<header class="sticky-top shadow-sm bg-dark">
-  <nav class="navbar navbar-expand-lg navbar-dark container">
-    <a class="navbar-brand d-flex align-items-center" href="/index.html">
-      <img src="/assets/img/favicon.svg" alt="" width="28" height="28" class="me-2">
-      <span class="fw-bold">Red Raven <span class="text-primary">Solutions</span></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRRS" aria-controls="navbarRRS" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarRRS">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link " href="/index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="/services.html">Cybersecurity Services</a></li>
-        <li class="nav-item"><a class="nav-link " href="/aegis.html">Aegis</a></li>
-        <li class="nav-item"><a class="nav-link " href="/about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link " href="/contact.html">Contact</a></li>
-      </ul>
-      
+<body class="rrs-body">
+
+<header class="rrs-header border-bottom bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/img/favicon.svg" alt="" width="28" height="28" class="me-2">
+        <span class="fw-bold">Red Raven <span class="text-rrs">Solutions</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rrsNav" aria-controls="rrsNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="rrsNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Cybersecurity Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="aegis.html">Aegis</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-rrs ms-lg-3 mt-3 mt-lg-0">Talk to an expert</a>
+      </div>
     </div>
   </nav>
 </header>
 
 <main>
-<section class="py-5 gradient-2 text-light">
-  <div class="container">
-    <h1 class="display-6 fw-bold mb-2">Cybersecurity Services</h1>
-    <p class="mb-0">Clear scope. Clear outcomes. Clear next steps.</p>
-  </div>
-</section>
+  <section class="py-5 bg-light border-bottom">
+    <div class="container">
+      <h1 class="h2 fw-bold mb-2">Cybersecurity Services</h1>
+      <p class="text-muted mb-0">
+        Clear scope. Clear outcomes. Clear next steps.
+      </p>
+    </div>
+  </section>
 
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-8">
-        <article id="penetration-testing" class="mb-5">
-          <h2 class="h4">Penetration Testing</h2>
-          <p>External, internal, wireless, and cloud testing mapped to OWASP and industry benchmarks. Deliverables include executive summary, technical detail, exploit proofs, and a prioritized remediation plan.</p>
-          <ul>
-            <li>Web & API testing (OWASP ASVS / API Top 10)</li>
-            <li>Internal/AD assessments & lateral movement</li>
-            <li>Cloud config & identity reviews (AWS/Azure)</li>
-          </ul>
-        </article>
-        <article id="red-team" class="mb-5">
-          <h2 class="h4">Red & Purple Team</h2>
-          <p>Adversary emulation across the kill-chain with collaborative detection and hardening. We co-create detection content and exercise incident response.</p>
-          <ul>
-            <li>Emulation plans mapped to MITRE ATT&CK®</li>
-            <li>Detection engineering & threat hunting sprints</li>
-            <li>Executive tabletop and lessons learned</li>
-          </ul>
-        </article>
-        <article id="advisory" class="mb-5">
-          <h2 class="h4">Advisory & Readiness</h2>
-          <p>Program assessments, risk reviews, and security architecture guidance that meets your business reality.</p>
-          <ul>
-            <li>Security architecture & roadmap</li>
-            <li>Policy & standards alignment</li>
-            <li>Incident response readiness</li>
-          </ul>
-        </article>
-      </div>
-      <div class="col-lg-4">
-        <div class="p-4 rounded shadow-sm bg-body-tertiary">
-          <h3 class="h5">Typical Engagements</h3>
-          <ul class="small mb-4">
-            <li>2–4 week pen test cycles</li>
-            <li>6–8 week purple-team programs</li>
-            <li>Quarterly advisory check-ins</li>
-          </ul>
-          <a href="/contact.html" class="btn btn-primary w-100">Get a quote</a>
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <article id="penetration-testing" class="mb-5">
+            <h2 class="h4 fw-bold mb-2">Penetration Testing</h2>
+            <p class="text-muted">
+              External, internal, wireless, and cloud testing aligned to industry standards like
+              OWASP and CIS. Our reports are designed to be used by engineering and leadership alike.
+            </p>
+            <ul class="text-muted small">
+              <li>Web and API testing (OWASP ASVS / API Top 10 awareness)</li>
+              <li>Internal / Active Directory assessments and lateral movement</li>
+              <li>Cloud configuration and identity reviews (AWS, Azure, hybrid)</li>
+              <li>Retesting windows to confirm remediation</li>
+            </ul>
+          </article>
+
+          <article id="red-team" class="mb-5">
+            <h2 class="h4 fw-bold mb-2">Red &amp; Purple Teaming</h2>
+            <p class="text-muted">
+              Adversary emulation across the kill chain, mapped to MITRE ATT&amp;CK. We work
+              side-by-side with your defenders to sharpen detection, response, and communication.
+            </p>
+            <ul class="text-muted small">
+              <li>Scenario design based on your threat model and constraints</li>
+              <li>Realistic phishing, initial access, and post-exploitation campaigns</li>
+              <li>Purple-team working sessions with detection and hunting teams</li>
+              <li>Lessons-learned workshops and backlog creation</li>
+            </ul>
+          </article>
+
+          <article id="advisory" class="mb-5">
+            <h2 class="h4 fw-bold mb-2">Advisory &amp; Readiness</h2>
+            <p class="text-muted">
+              Strategic support to align your security initiatives with business priorities.
+            </p>
+            <ul class="text-muted small">
+              <li>Security architecture and roadmap development</li>
+              <li>Program assessments and gap analysis</li>
+              <li>Incident response readiness and tabletop exercises</li>
+              <li>Coaching for security leaders and technical leads</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="col-lg-4">
+          <aside class="rrs-side-card">
+            <h3 class="h6 text-uppercase text-muted mb-3">Typical engagement shapes</h3>
+            <ul class="small text-muted mb-3">
+              <li>2–4 week penetration testing cycles</li>
+              <li>6–8 week purple-team programs</li>
+              <li>Quarterly advisory touchpoints</li>
+            </ul>
+            <p class="small text-muted mb-3">
+              Every engagement includes a clear scope, communication plan, and executive
+              read-out tailored to your stakeholders.
+            </p>
+            <a href="contact.html" class="btn btn-rrs w-100">Get a custom quote</a>
+          </aside>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </main>
 
-<footer class="py-5 bg-dark text-light mt-5 border-top border-secondary">
-  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-start gap-4">
+<footer class="py-4 border-top bg-white">
+  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3">
     <div>
-      <div class="d-flex align-items-center mb-2">
-        <img src="/assets/img/favicon.svg" width="28" height="28" class="me-2" alt="">
-        <strong>Red Raven Solutions</strong>
-      </div>
-      <p class="mb-1 small-90">Modern cybersecurity services: red teaming, penetration testing, and advisory.</p>
-      <p class="mb-0 small-90 text-secondary">© <span id="year"></span> Red Raven Solutions. All rights reserved.</p>
+      <strong class="d-block mb-1">Red Raven Solutions</strong>
+      <p class="text-muted small mb-0">
+        © <span id="year"></span> Red Raven Solutions. All rights reserved.
+      </p>
     </div>
-    <div class="d-flex gap-4">
-      <div>
-        <div class="fw-semibold">Navigate</div>
-        <ul class="list-unstyled mb-0 small-90">
-          <li><a class="text-decoration-none link-light-underline" href="/index.html">Home</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/services.html">Services</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/aegis.html">Aegis</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/about.html">About</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="fw-semibold">Contact</div>
-        <ul class="list-unstyled mb-0 small-90">
-          <li><a class="text-decoration-none link-light-underline" href="mailto:hello@redravensolutions.com">hello@redravensolutions.com</a></li>
-          <li><span class="text-secondary">Haymarket, VA</span></li>
-        </ul>
-      </div>
+    <div class="small text-muted">
+      <a href="mailto:hello@redravensolutions.com" class="link-secondary text-decoration-none">
+        hello@redravensolutions.com
+      </a>
     </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="/assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

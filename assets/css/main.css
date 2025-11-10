@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+}
+
+.rrs-body {
+  background-color: #f9fafb;
+  color: #111827;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.text-rrs {
+  color: #e11d48; /* rose-600-style accent */
+}
+
+.bg-hero {
+  background: radial-gradient(circle at top left, #fee2e2 0, transparent 60%),
+              radial-gradient(circle at top right, #dbeafe 0, transparent 55%),
+              #ffffff;
+}
+
+.bg-hero-soft {
+  background: radial-gradient(circle at top left, #dcfce7 0, transparent 55%),
+              #ffffff;
+}
+
+.bg-rrs-soft {
+  background: #fef2f2;
+}
+
+.btn-rrs {
+  background-color: #e11d48;
+  border-color: #e11d48;
+  color: #ffffff;
+}
+
+.btn-rrs:hover {
+  background-color: #be123c;
+  border-color: #be123c;
+  color: #ffffff;
+}
+
+.bg-rrs-soft .btn-rrs {
+  box-shadow: 0 6px 14px rgba(225, 29, 72, 0.2);
+}
+
+/* Hero card */
+.rrs-hero-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+/* Generic cards */
+.rrs-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rrs-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+/* Tag cards */
+.rrs-tag-card {
+  background-color: #ffffff;
+  border-radius: 0.9rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+/* Side card */
+.rrs-side-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+/* Form card */
+.rrs-form-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+/* Stats */
+.rrs-stat-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.rrs-stat-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.rrs-stat-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Links */
+.link-rrs {
+  color: #e11d48;
+  text-decoration: none;
+}
+
+.link-rrs:hover {
+  text-decoration: underline;
+}
+
+/* Badges */
+.bg-rrs-soft.text-rrs {
+  background-color: #fef2f2;
+}
+
+/* Buttons & forms */
+.form-control:focus {
+  border-color: #e11d48;
+  box-shadow: 0 0 0 0.2rem rgba(225, 29, 72, 0.25);
+}
+
+/* Spacing utilities */
+.py-lg-6 {
+  padding-top: 4.5rem !important;
+  padding-bottom: 4.5rem !important;
+}
+
+/* Small helper */
+@media (max-width: 575.98px) {
+  .rrs-hero-card {
+    margin-top: 1rem;
+  }
+}

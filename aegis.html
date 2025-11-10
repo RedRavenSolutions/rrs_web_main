@@ -2,162 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aegis • Red Raven Solutions</title>
-  <meta name="description" content="Red Raven Solutions — cyber security services, red teaming, and advisory.">
-  <meta property="og:title" content="Aegis • Red Raven Solutions">
-  <meta property="og:description" content="Cybersecurity services for modern organizations.">
-  <meta property="og:image" content="/assets/img/og-image.png">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#111827">
-  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" sizes="32x32" href="/assets/img/favicon-32.png" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aegis is Red Raven Solutions' operations accelerator for security teams.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body class="bg-body">
-<header class="sticky-top shadow-sm bg-dark">
-  <nav class="navbar navbar-expand-lg navbar-dark container">
-    <a class="navbar-brand d-flex align-items-center" href="/index.html">
-      <img src="/assets/img/favicon.svg" alt="" width="28" height="28" class="me-2">
-      <span class="fw-bold">Red Raven <span class="text-primary">Solutions</span></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRRS" aria-controls="navbarRRS" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarRRS">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link " href="/index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link " href="/services.html">Cybersecurity Services</a></li>
-        <li class="nav-item"><a class="nav-link active" href="/aegis.html">Aegis</a></li>
-        <li class="nav-item"><a class="nav-link " href="/about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link " href="/contact.html">Contact</a></li>
-      </ul>
-      
+<body class="rrs-body">
+
+<header class="rrs-header border-bottom bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/img/favicon.svg" alt="" width="28" height="28" class="me-2">
+        <span class="fw-bold">Red Raven <span class="text-rrs">Solutions</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rrsNav" aria-controls="rrsNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="rrsNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Cybersecurity Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="aegis.html">Aegis</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-rrs ms-lg-3 mt-3 mt-lg-0">Request a demo</a>
+      </div>
     </div>
   </nav>
 </header>
 
 <main>
-<section class="py-5" style="background: radial-gradient(900px 400px at 15% 10%, rgba(16,185,129,.25), transparent 60%), linear-gradient(180deg,#0b0f19 0%,#0b0f19 100%);">
-  <div class="container text-light">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-7">
-        <h1 class="display-6 fw-bold mb-2">Aegis</h1>
-        <p class="lead mb-4 text-secondary">Lightweight security operations accelerator—playbooks, automations, and reporting that plug into your stack.</p>
-        <div class="d-flex gap-3">
-          <a href="#features" class="btn btn-primary btn-lg">See Features</a>
-          <a href="/contact.html" class="btn btn-outline-light btn-lg">Request a Demo</a>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="glass-card p-4">
-          <h2 class="h5 mb-3">Outcomes</h2>
-          <ul class="mb-0">
-            <li class="mb-2 d-flex"><span class="check me-2"></span> Faster findings-to-fixes cycles</li>
-            <li class="mb-2 d-flex"><span class="check me-2"></span> Repeatable evidence & metrics</li>
-            <li class="mb-2 d-flex"><span class="check me-2"></span> Team enablement via guided runbooks</li>
+  <section class="py-5 bg-hero-soft border-bottom">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <h1 class="h2 fw-bold mb-2">Aegis</h1>
+          <p class="lead text-muted mb-3">
+            A lightweight operations accelerator for security teams: playbooks, automations,
+            and reporting patterns that shorten the path from findings to fixes.
+          </p>
+          <ul class="text-muted small mb-3">
+            <li>Standardized engagement runbooks and checklists</li>
+            <li>Integration-friendly hooks into your existing tooling</li>
+            <li>Reusable reporting components for execs and engineers</li>
           </ul>
+          <a href="contact.html" class="btn btn-rrs">Join the Aegis waitlist</a>
+        </div>
+        <div class="col-lg-5">
+          <div class="rrs-hero-card shadow-sm">
+            <h2 class="h6 text-uppercase text-muted mb-3">How Aegis fits</h2>
+            <p class="small text-muted mb-2">
+              Aegis is designed to sit alongside your scanners, SIEM, and ticketing systems.
+            </p>
+            <ul class="small text-muted mb-0">
+              <li>Inputs: scanner exports, notes, screenshots, logs</li>
+              <li>Outputs: tickets, dashboards, reports, metrics</li>
+              <li>Integrations: Jira, GitHub, GitLab, Slack/Teams (via simple hooks)</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="features" class="py-5">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow hover-rise">
-          <div class="card-body">
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="rrs-card h-100">
             <h3 class="h5">Engagement Playbooks</h3>
-            <p class="mb-0">Prebuilt workflows for pen tests, purple-team sprints, and IR readiness with artifact templates and acceptance checks.</p>
+            <p class="small text-muted">
+              Prebuilt patterns for penetration testing, purple-team sprints, and
+              IR readiness, complete with acceptance criteria and evidence prompts.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow hover-rise">
-          <div class="card-body">
+        <div class="col-md-4">
+          <div class="rrs-card h-100">
             <h3 class="h5">Automation Hooks</h3>
-            <p class="mb-0">Simple webhooks/CLI glue to push issues to Jira/GitHub, update dashboards, and notify Slack/MS Teams.</p>
+            <p class="small text-muted">
+              Simple, transparent hooks to push issues into ticketing systems,
+              update dashboards, and notify the right channels.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow hover-rise">
-          <div class="card-body">
+        <div class="col-md-4">
+          <div class="rrs-card h-100">
             <h3 class="h5">Reporting Accelerator</h3>
-            <p class="mb-0">Executive and technical report scaffolds with evidence blocks, MITRE mappings, and remediation matrices.</p>
+            <p class="small text-muted">
+              Report scaffolds that keep technical depth without losing executive
+              clarity, with reusable sections for future engagements.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-4">
+        <div class="col-lg-7">
+          <div class="rrs-side-card h-100">
+            <h3 class="h6 text-uppercase text-muted mb-3">Roadmap</h3>
+            <ul class="small text-muted mb-0">
+              <li><strong>Alpha:</strong> Internal pilots and feedback loops</li>
+              <li><strong>Beta:</strong> Selected customer trials</li>
+              <li><strong>v1.0:</strong> Public launch with documentation and templates</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="rrs-side-card h-100">
+            <h3 class="h6 text-uppercase text-muted mb-3">Interested?</h3>
+            <p class="small text-muted">
+              If you’d like to shape Aegis with us, we’re looking for a small group of
+              design partners who care about reducing friction between security and delivery.
+            </p>
+            <a href="contact.html" class="btn btn-outline-secondary btn-sm w-100">Apply as a design partner</a>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="row g-4 mt-1">
-      <div class="col-lg-7">
-        <div class="p-4 rounded shadow-sm bg-body-tertiary h-100">
-          <h3 class="h5">How Aegis Fits</h3>
-          <p class="mb-2">Aegis is stack-agnostic. Use it alongside your existing vulnerability scanners, EDR, SIEM, and ticketing.</p>
-          <ul class="mb-0">
-            <li>Inputs: findings JSON/CSV, notes, screenshots, logs</li>
-            <li>Outputs: issues, dashboards, reports, metrics</li>
-            <li>Integrations: Jira, GitHub, GitLab, Slack/Teams, CSV/JSON</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="p-4 rounded shadow-sm bg-body-tertiary h-100">
-          <h3 class="h5">Roadmap</h3>
-          <ul class="mb-0 small">
-            <li><strong>Alpha</strong>: internal pilots & feedback</li>
-            <li><strong>Beta</strong>: selected customer trials</li>
-            <li><strong>v1.0</strong>: public launch with docs/templates</li>
-          </ul>
-          <a href="/contact.html" class="btn btn-primary mt-3 w-100">Join the waitlist</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-center mt-5">
-      <a href="/contact.html" class="btn btn-outline-light btn-lg">Schedule a discovery call</a>
-    </div>
-  </div>
-</section>
+  </section>
 </main>
 
-<footer class="py-5 bg-dark text-light mt-5 border-top border-secondary">
-  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-start gap-4">
+<footer class="py-4 border-top bg-white">
+  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3">
     <div>
-      <div class="d-flex align-items-center mb-2">
-        <img src="/assets/img/favicon.svg" width="28" height="28" class="me-2" alt="">
-        <strong>Red Raven Solutions</strong>
-      </div>
-      <p class="mb-1 small-90">Modern cybersecurity services: red teaming, penetration testing, and advisory.</p>
-      <p class="mb-0 small-90 text-secondary">© <span id="year"></span> Red Raven Solutions. All rights reserved.</p>
-    </div>
-    <div class="d-flex gap-4">
-      <div>
-        <div class="fw-semibold">Navigate</div>
-        <ul class="list-unstyled mb-0 small-90">
-          <li><a class="text-decoration-none link-light-underline" href="/index.html">Home</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/services.html">Services</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/aegis.html">Aegis</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/about.html">About</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="fw-semibold">Contact</div>
-        <ul class="list-unstyled mb-0 small-90">
-          <li><a class="text-decoration-none link-light-underline" href="mailto:hello@redravensolutions.com">hello@redravensolutions.com</a></li>
-          <li><span class="text-secondary">Haymarket, VA</span></li>
-        </ul>
-      </div>
+      <strong class="d-block mb-1">Red Raven Solutions</strong>
+      <p class="text-muted small mb-0">
+        © <span id="year"></span> Red Raven Solutions. All rights reserved.
+      </p>
     </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="/assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

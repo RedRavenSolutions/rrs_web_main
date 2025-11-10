@@ -2,159 +2,263 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <title>Red Raven Solutions • Cybersecurity & Red Teaming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home • Red Raven Solutions</title>
-  <meta name="description" content="Red Raven Solutions — cyber security services, red teaming, and advisory.">
-  <meta property="og:title" content="Home • Red Raven Solutions">
-  <meta property="og:description" content="Cybersecurity services for modern organizations.">
-  <meta property="og:image" content="/assets/img/og-image.png">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#111827">
-  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" sizes="32x32" href="/assets/img/favicon-32.png" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <meta name="description" content="Red Raven Solutions provides penetration testing, red teaming, and security advisory services.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body class="bg-body">
-<header class="sticky-top shadow-sm bg-dark">
-  <nav class="navbar navbar-expand-lg navbar-dark container">
-    <a class="navbar-brand d-flex align-items-center" href="/index.html">
-      <img src="/assets/img/favicon.svg" alt="" width="28" height="28" class="me-2">
-      <span class="fw-bold">Red Raven <span class="text-primary">Solutions</span></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRRS" aria-controls="navbarRRS" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarRRS">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link " href="/services.html">Cybersecurity Services</a></li>
-        <li class="nav-item"><a class="nav-link " href="/aegis.html">Aegis</a></li>
-        <li class="nav-item"><a class="nav-link " href="/about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link " href="/contact.html">Contact</a></li>
-      </ul>
-      
+<body class="rrs-body">
+
+<header class="rrs-header border-bottom bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/img/favicon.svg" alt="Red Raven logo" width="28" height="28" class="me-2">
+        <span class="fw-bold">Red Raven <span class="text-rrs">Solutions</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rrsNav" aria-controls="rrsNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="rrsNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Cybersecurity Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="aegis.html">Aegis</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-rrs ms-lg-3 mt-3 mt-lg-0">Talk to an expert</a>
+      </div>
     </div>
   </nav>
 </header>
 
 <main>
-<section class="hero gradient-1 text-light py-5 py-lg-6 position-relative overflow-hidden">
-  <div class="container position-relative">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-        <h1 class="display-5 fw-bold">Elevate Your Defense with Red Raven</h1>
-        <p class="lead mb-4">Penetration testing, red teaming, and practical security engineering—built for real-world threats.</p>
-        <div class="d-flex gap-3">
-          <a href="/services.html" class="btn btn-primary btn-lg">Explore Services</a>
-          <a href="/contact.html" class="btn btn-outline-light btn-lg">Talk to an Expert</a>
+  <!-- Hero -->
+  <section class="py-5 py-lg-6 bg-hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="badge rounded-pill bg-rrs-soft text-rrs fw-semibold mb-3">
+            Penetration Testing • Red Team • Advisory
+          </span>
+          <h1 class="display-5 fw-bold mb-3">
+            Offense-driven security for real-world threats.
+          </h1>
+          <p class="lead text-muted mb-4">
+            Red Raven Solutions helps security and engineering teams find and fix what matters most
+            through focused testing, adversary emulation, and practical security engineering.
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-3">
+            <a href="services.html" class="btn btn-rrs btn-lg">Explore services</a>
+            <a href="contact.html" class="btn btn-outline-secondary btn-lg">Request a scoping call</a>
+          </div>
+          <!-- <div class="d-flex flex-wrap align-items-center gap-3 mt-4 text-muted small">
+            <span class="fw-semibold text-dark">Trusted experience:</span>
+            <span class="badge bg-light border">24+ years in cyber</span>
+            <span class="badge bg-light border">OSCP • PJPT • CPT</span>
+          </div> -->
         </div>
-        
-      </div>
-      <div class="col-lg-5 mt-5 mt-lg-0">
-        <div class="glass-card p-4">
-          <h2 class="h4 mb-3">Rapid Maturity, Measurable Outcomes</h2>
-          <ul class="list-unstyled mb-0">
-            <li class="mb-2 d-flex"><span class="check me-2"></span> Purple-team engagements mapped to MITRE ATT&CK®</li>
-            <li class="mb-2 d-flex"><span class="check me-2"></span> Cloud, web, and internal pen tests with clear fixes</li>
-            <li class="mb-2 d-flex"><span class="check me-2"></span> Executive-ready reporting and remediation coaching</li>
-          </ul>
+        <div class="col-lg-6">
+          <div class="rrs-hero-card shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h2 class="h6 mb-0 text-uppercase text-muted">Example Engagement</h2>
+              <span class="badge bg-success-subtle text-success">4–6 weeks</span>
+            </div>
+            <ul class="list-unstyled mb-0 small">
+              <li class="d-flex justify-content-between mb-2">
+                <span>External attack surface review</span>
+                <span class="text-muted">Week 1–2</span>
+              </li>
+              <li class="d-flex justify-content-between mb-2">
+                <span>Internal &amp; cloud penetration test</span>
+                <span class="text-muted">Week 2–4</span>
+              </li>
+              <li class="d-flex justify-content-between mb-2">
+                <span>Purple-team detection tuning</span>
+                <span class="text-muted">Week 4–5</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span>Executive read-out &amp; roadmap</span>
+                <span class="text-muted">Week 6</span>
+              </li>
+            </ul>
+            <div class="mt-3 small text-muted">
+              Clear steps, clear owners, and clear outcomes at every phase.
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="bg-shape"></div>
-</section>
+  </section>
 
-<section class="py-5">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="fw-bold">What We Do</h2>
-      <p class="text-secondary mb-0">A focused service line that delivers results.</p>
+  <!-- Who we work with -->
+  <section class="py-5 border-top">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <h2 class="h3 fw-bold mb-3">Who we work with</h2>
+          <p class="text-muted mb-0">
+            Security, IT, and engineering leaders who need real-world testing,
+            not theatrics. We plug into your roadmap, your tooling, and your constraints.
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="rrs-tag-card">
+                <div class="small text-muted mb-1">01</div>
+                <div class="fw-semibold">SaaS &amp; product teams</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="rrs-tag-card">
+                <div class="small text-muted mb-1">02</div>
+                <div class="fw-semibold">Regulated industries</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="rrs-tag-card">
+                <div class="small text-muted mb-1">03</div>
+                <div class="fw-semibold">Gov / public sector</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow hover-rise">
-          <div class="card-body">
+  </section>
+
+  <!-- Capabilities -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="h3 fw-bold">What we do</h2>
+        <p class="text-muted mb-0">Three focused capabilities that reinforce each other.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="rrs-card h-100">
             <h3 class="h5">Penetration Testing</h3>
-            <p class="mb-3">External, internal, cloud, and application testing with prioritized, actionable findings.</p>
-            <a class="stretched-link" href="/services.html#penetration-testing">Learn more</a>
+            <p class="text-muted small">
+              External, internal, and cloud testing with reproducible findings and
+              prioritized remediation guidance.
+            </p>
+            <a href="services.html#penetration-testing" class="small link-rrs">View approach →</a>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow hover-rise">
-          <div class="card-body">
-            <h3 class="h5">Red/Purple Team</h3>
-            <p class="mb-3">Adversary emulation and detection engineering that strengthens controls and response.</p>
-            <a class="stretched-link" href="/services.html#red-team">Learn more</a>
+        <div class="col-md-4">
+          <div class="rrs-card h-100">
+            <h3 class="h5">Red &amp; Purple Teaming</h3>
+            <p class="text-muted small">
+              Adversary emulation mapped to MITRE ATT&amp;CK with collaborative
+              detection tuning and response exercises.
+            </p>
+            <a href="services.html#red-team" class="small link-rrs">See scenarios →</a>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow hover-rise">
-          <div class="card-body">
-            <h3 class="h5">Advisory & Readiness</h3>
-            <p class="mb-3">Program reviews, tabletop exercises, and security architecture guidance.</p>
-            <a class="stretched-link" href="/services.html#advisory">Learn more</a>
+        <div class="col-md-4">
+          <div class="rrs-card h-100">
+            <h3 class="h5">Advisory &amp; Readiness</h3>
+            <p class="text-muted small">
+              Program reviews, security architecture guidance, and table-top exercises
+              anchored in your business reality.
+            </p>
+            <a href="services.html#advisory" class="small link-rrs">Explore advisory →</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="py-5 bg-body-tertiary">
-  <div class="container">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-6 order-lg-2">
-        <!--<div class="ratio ratio-16x9 rounded shadow overflow-hidden">
-          <iframe src="https://www.youtube.com/embed/dZwbb42pdtg" title="RRS reel" allowfullscreen></iframe>
-        </div>-->
-      </div>
-      <div class="col-lg-6">
-        <h2 class="fw-bold">Operate with Confidence</h2>
-        <p>We meet you where you are and lift your security posture without theatrics or fluff—just impact.</p>
-        <a href="/contact.html" class="btn btn-primary">Request a scoping call</a>
+  <!-- Aegis promo -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="h3 fw-bold mb-3">Aegis: the operations accelerator</h2>
+          <p class="text-muted mb-3">
+            Aegis is our internal framework for taking findings to fixes quickly:
+            playbooks, automations, and reporting patterns that plug into your
+            existing tools.
+          </p>
+          <ul class="text-muted small mb-3">
+            <li>Standardized engagement runbooks and templates</li>
+            <li>Simple hooks into Jira, GitHub, GitLab, and ticketing</li>
+            <li>Executive and technical reporting scaffolds</li>
+          </ul>
+          <a href="aegis.html" class="btn btn-outline-secondary btn-sm">Learn more about Aegis</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="rrs-hero-card shadow-sm">
+            <h3 class="h6 text-uppercase text-muted mb-3">From findings to outcomes</h3>
+            <ol class="small text-muted ps-3 mb-0">
+              <li>Shape the engagement and success criteria.</li>
+              <li>Run focused testing with live touchpoints.</li>
+              <li>Translate findings into prioritized work items.</li>
+              <li>Track progress and measure reduction in risk.</li>
+            </ol>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 bg-rrs-soft">
+    <div class="container text-center">
+      <h2 class="h3 fw-bold mb-2">Ready to see where you stand?</h2>
+      <p class="text-muted mb-4">
+        Share a bit about your environment, and we’ll propose an engagement that
+        fits your goals and constraints.
+      </p>
+      <a href="contact.html" class="btn btn-rrs btn-lg">Start the conversation</a>
+    </div>
+  </section>
 </main>
 
-<footer class="py-5 bg-dark text-light mt-5 border-top border-secondary">
-  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-start gap-4">
+<footer class="py-4 border-top bg-white">
+  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3">
     <div>
       <div class="d-flex align-items-center mb-2">
-        <img src="/assets/img/favicon.svg" width="28" height="28" class="me-2" alt="">
+        <img src="assets/img/favicon.svg" width="24" height="24" class="me-2" alt="">
         <strong>Red Raven Solutions</strong>
       </div>
-      <p class="mb-1 small-90">Modern cybersecurity services: red teaming, penetration testing, and advisory.</p>
-      <p class="mb-0 small-90 text-secondary">© <span id="year"></span> Red Raven Solutions. All rights reserved.</p>
+      <p class="text-muted small mb-1">
+        Modern cybersecurity services: penetration testing, red teaming, and advisory.
+      </p>
+      <p class="text-muted small mb-0">
+        © <span id="year"></span> Red Raven Solutions. All rights reserved.
+      </p>
     </div>
     <div class="d-flex gap-4">
       <div>
-        <div class="fw-semibold">Navigate</div>
-        <ul class="list-unstyled mb-0 small-90">
-          <li><a class="text-decoration-none link-light-underline" href="/index.html">Home</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/services.html">Services</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/aegis.html">Aegis</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/about.html">About</a></li>
-          <li><a class="text-decoration-none link-light-underline" href="/contact.html">Contact</a></li>
+        <div class="fw-semibold small mb-2">Navigate</div>
+        <ul class="list-unstyled small text-muted mb-0">
+          <li><a href="index.html" class="link-secondary text-decoration-none">Home</a></li>
+          <li><a href="services.html" class="link-secondary text-decoration-none">Services</a></li>
+          <li><a href="aegis.html" class="link-secondary text-decoration-none">Aegis</a></li>
+          <li><a href="about.html" class="link-secondary text-decoration-none">About</a></li>
+          <li><a href="contact.html" class="link-secondary text-decoration-none">Contact</a></li>
         </ul>
       </div>
       <div>
-        <div class="fw-semibold">Contact</div>
-        <ul class="list-unstyled mb-0 small-90">
-          <li><a class="text-decoration-none link-light-underline" href="mailto:hello@redravensolutions.com">hello@redravensolutions.com</a></li>
-          <li><span class="text-secondary">Prince William County, VA</span></li>
+        <div class="fw-semibold small mb-2">Contact</div>
+        <ul class="list-unstyled small text-muted mb-0">
+          <li><a href="mailto:hello@redravensolutions.com" class="link-secondary text-decoration-none">hello@redravensolutions.com</a></li>
+          <li>Haymarket, Virginia</li>
         </ul>
       </div>
     </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="/assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
