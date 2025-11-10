@@ -145,3 +145,31 @@ html, body {
   border-radius: 999px;
   padding-inline: 1rem;
 }
+
+/* Hero section */
+.bg-hero {
+  background: url("../img/hero-bg.png") center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.bg-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 15, 25, 0.6); /* dark overlay for contrast */
+}
+
+.bg-hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-rrs {
+  background-color: #c53030;
+  border: none;
+  color: #fff;
+}
+.btn-rrs:hover {
+  background-color: #a31e1e;
+}

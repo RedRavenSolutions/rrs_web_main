@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Preparing for a penetration test: a one-page checklist • Red Raven Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How to prepare your teams, scope, and environment for a successful penetration test.">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body class="rrs-body">
+
+<header class="rrs-header border-bottom bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../assets/img/favicon.svg" alt="" width="28" height="28" class="me-2">
+        <span class="fw-bold">Red Raven <span class="text-rrs">Solutions</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rrsNav" aria-controls="rrsNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="rrsNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../services.html">Cybersecurity Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="../aegis.html">Aegis</a></li>
+          <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex flex-column flex-lg-row gap-2 ms-lg-3 mt-3 mt-lg-0">
+          <a href="../contact.html" class="btn btn-rrs">Talk to an expert</a>
+          <a href="../contact.html#breach" class="btn btn-outline-danger btn-sm">Report a breach</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="py-5 bg-light border-bottom">
+    <div class="container">
+      <p class="small text-muted mb-1">
+        Blog &middot; Guide
+      </p>
+      <!-- <h1 class="h2 fw-bold mb-2">Preparing for a penetration test: a one-page checklist</h1>
+      <p class="text-muted mb-0">
+        Help your next test land cleanly by getting scope, expectations, and logistics
+        aligned before anyone runs a single payload.
+      </p> -->
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <article class="bg-white p-4 p-md-5 rounded-3 border">
+            <h2 class="h4 mb-3">Why you need a better read-out</h2>
+<p>
+  A great penetration test or red team loses impact if the executive read-out
+  feels like a bug report. Leaders don’t need payload details; they need a clear
+  story that connects risk to decisions and next steps.
+</p>
+<p>
+  This template is a <strong>simple slide structure</strong> you can adapt to your
+  organization and testing style. Think of it as a narrative spine rather than a
+  rigid deck.
+</p>
+
+<hr class="my-4">
+
+<h2 class="h5 mb-3">Slide 1 – Title &amp; quick context</h2>
+<ul class="small text-muted">
+  <li><strong>Title:</strong> “&lt;Engagement type&gt; results – &lt;System/Org Name&gt;”</li>
+  <li><strong>Subtitle:</strong> Dates, type of testing (e.g., “External &amp; internal pen test”).</li>
+  <li><strong>Who’s in the room:</strong> Security, IT/eng leads, key stakeholders.</li>
+  <li><strong>One-sentence purpose:</strong> “We’re here to show what we found, what it means,
+      and what we recommend doing next.”</li>
+</ul>
+
+<h2 class="h5 mb-3">Slide 2 – Objectives and scope (one slide)</h2>
+<p class="small text-muted mb-1">
+  Anchor everyone before diving into findings.
+</p>
+<ul class="small text-muted">
+  <li><strong>Objectives:</strong> 2–3 bullets describing what you set out to learn.
+    <ul>
+      <li>“Evaluate external attack surface for critical internet-facing assets.”</li>
+      <li>“Assess lateral movement risk after a single endpoint compromise.”</li>
+    </ul>
+  </li>
+  <li><strong>Scope highlights:</strong> a simple table or bullets:
+    <ul>
+      <li>In-scope apps, environments, or business units.</li>
+      <li>What was out of scope (if important to mention).</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="h5 mb-3">Slide 3 – High-level outcome (the “so what” slide)</h2>
+<p>
+  This is the slide executives will remember. Aim for a <strong>one-slide summary</strong>.
+</p>
+<ul class="small text-muted">
+  <li><strong>Overall assessment:</strong> short phrase (e.g., “Meaningful weaknesses, but clear path to improve”).</li>
+  <li><strong>3–5 key takeaways:</strong>
+    <ul>
+      <li>“We found X critical issues affecting Y systems.”</li>
+      <li>“The most realistic attack path looked like &lt;short description&gt;.”</li>
+      <li>“Detection worked well / needs improvement in &lt;areas&gt;.”</li>
+      <li>“We have a prioritized 30/60/90-day plan to address gaps.”</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="h5 mb-3">Slide 4 – Risk picture (visual)</h2>
+<p>
+  Use a simple, honest visual—no need to overcomplicate.
+</p>
+<ul class="small text-muted">
+  <li><strong>Options:</strong>
+    <ul>
+      <li>Heatmap of critical/high/medium issues across major areas (identity, network, app, cloud).</li>
+      <li>Bar chart: number of findings by severity.</li>
+      <li>Simple table: “Top 3 risk themes” with brief descriptions.</li>
+    </ul>
+  </li>
+  <li><strong>Goal:</strong> show where risk clusters, not every single finding.</li>
+</ul>
+
+<h2 class="h5 mb-3">Slide 5 – Attack path / scenario (for red team or deeper tests)</h2>
+<p>
+  When applicable, walk through a <strong>single primary attack path</strong> as a story.
+</p>
+<ul class="small text-muted">
+  <li>Start with <strong>initial access</strong> (e.g., phishing, exposed service).</li>
+  <li>Show 3–5 major steps:
+    <ul>
+      <li>Initial foothold → privilege escalation → lateral movement → objective.</li>
+    </ul>
+  </li>
+  <li>Note where:
+    <ul>
+      <li>Detection worked.</li>
+      <li>Detection did not work but should have.</li>
+    </ul>
+  </li>
+</ul>
+<p class="small text-muted">
+  Keep technical detail in the appendix. For executives, focus on what happened,
+  why it was possible, and what you’re going to do about it.
+</p>
+
+<h2 class="h5 mb-3">Slide 6 – Key strengths and positives</h2>
+<p>
+  Don’t skip this. It builds trust and shows progress.
+</p>
+<ul class="small text-muted">
+  <li>Highlight 3–4 strengths:
+    <ul>
+      <li>Areas where configurations, controls, or processes worked as intended.</li>
+      <li>Detections that fired at the right time.</li>
+      <li>Teams that responded quickly or thoroughly.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="h5 mb-3">Slide 7 – Top risks and themes</h2>
+<p>
+  Group related issues into <strong>themes</strong> that make sense to leadership.
+</p>
+<ul class="small text-muted">
+  <li>Examples:
+    <ul>
+      <li>“Identity and access management gaps”</li>
+      <li>“Lack of segmentation between critical systems”</li>
+      <li>“Inconsistent patching and hardening in &lt;area&gt;”</li>
+    </ul>
+  </li>
+  <li>For each theme: one sentence on <strong>impact</strong> and one on <strong>cause</strong>.</li>
+</ul>
+
+<h2 class="h5 mb-3">Slide 8 – Remediation plan (30/60/90)</h2>
+<p>
+  Turn findings into a <strong>time-boxed plan</strong> instead of a giant backlog.
+</p>
+<ul class="small text-muted">
+  <li><strong>30 days:</strong> quick wins and critical stop-the-bleeding fixes.</li>
+  <li><strong>60 days:</strong> structural changes for the most important gaps.</li>
+  <li><strong>90+ days:</strong> deeper improvements, refactors, or roadmap items.</li>
+</ul>
+<p class="small text-muted">
+  Assign owners at the team level, not individuals (e.g., “Identity team”, “AppSec”, “Platform eng”).
+</p>
+
+<h2 class="h5 mb-3">Slide 9 – Support needed from leadership</h2>
+<p>
+  This is your chance to make <strong>explicit asks</strong> while you have attention.
+</p>
+<ul class="small text-muted">
+  <li>Examples:
+    <ul>
+      <li>“Endorse and prioritize the 30/60/90-day plan.”</li>
+      <li>“Support temporary change freezes where needed to implement fixes safely.”</li>
+      <li>“Align on acceptable risk for areas we won’t address this quarter.”</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="h5 mb-3">Slide 10 – Q&amp;A and next steps</h2>
+<ul class="small text-muted">
+  <li>Summarize:
+    <ul>
+      <li>What we tested</li>
+      <li>What we found</li>
+      <li>What we’re doing about it</li>
+    </ul>
+  </li>
+  <li>Invite questions from leadership and clarify any trade-offs.</li>
+</ul>
+
+<hr class="my-4">
+
+<h2 class="h5 mb-3">Appendix – Where the technical detail lives</h2>
+<p class="small text-muted">
+  The executive deck shouldn’t hold every payload and PoC—that belongs in the
+  technical report and appendix. Consider including:
+</p>
+<ul class="small text-muted">
+  <li>Per-finding technical details, evidence, and replication steps.</li>
+  <li>Mappings to frameworks (e.g., MITRE ATT&amp;CK, OWASP categories).</li>
+  <li>Any logs, timelines, or packet captures relevant to detections.</li>
+</ul>
+<p class="small text-muted">
+  Share the detailed report and appendix with the right technical teams, but keep
+  the main read-out tight and decision-focused.
+</p>
+
+          </article>
+        </div>
+        <div class="col-lg-4">
+          <aside class="rrs-side-card">
+            <h2 class="h6 text-uppercase text-muted mb-3">Share this</h2>
+            <p class="small text-muted mb-2">
+              Many teams use this checklist as part of their internal runbook before
+              a test. Feel free to share or adapt it.
+            </p>
+            <a href="../blog.html" class="small link-rrs">← Back to all resources</a>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="py-4 border-top bg-white">
+  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3">
+    <div>
+      <strong class="d-block mb-1">Red Raven Solutions</strong>
+      <p class="text-muted small mb-0">
+        © <span id="year"></span> Red Raven Solutions. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
