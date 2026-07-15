@@ -77,6 +77,21 @@
 
             <hr class="my-4">
 
+            <!-- Gate: unlock full template -->
+            <div id="rrs-gate" class="rrs-side-card text-center py-5 px-4 my-4">
+              <div class="fs-2 mb-2">🔒</div>
+              <h3 class="h5 fw-bold mb-2">Unlock the full 10-slide template</h3>
+              <p class="small text-muted mb-4">
+                Enter your info below and we&rsquo;ll unlock the complete slide-by-slide
+                structure — plus you&rsquo;ll have it on hand for your next engagement.
+              </p>
+              <div class="mx-auto" style="max-width: 420px;">
+                <script src="https://js-na2.hsforms.net/forms/embed/244322946.js" defer></script>
+                <div class="hs-form-frame" data-region="na2" data-form-id="566d6a0f-1e12-498d-9615-cc4fb8d83534" data-portal-id="244322946"></div>
+              </div>
+            </div>
+
+            <div id="rrs-gated-content" class="d-none">
             <h3 class="h5 fw-bold mb-3">Slide 1 – Title &amp; quick context</h3>
             <ul class="text-muted small mb-4">
               <li><strong>Title:</strong> “&lt;Engagement type&gt; results – &lt;System/Org Name&gt;”</li>
@@ -259,6 +274,7 @@
               <p class="small text-muted mb-1">Written by:</p>
               <p class="fw-semibold mb-0">Chris Coppock — Founder, Red Raven Solutions</p>
             </div>
+            </div><!-- /#rrs-gated-content -->
           </article>
         </div>
 
@@ -312,5 +328,36 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/main.js"></script>
+<script>
+(() => {
+  const GATE_FORM_ID = '566d6a0f-1e12-498d-9615-cc4fb8d83534';
+  const STORAGE_KEY = 'rrsExecTemplateUnlocked';
+  const gate = document.getElementById('rrs-gate');
+  const content = document.getElementById('rrs-gated-content');
+
+  function unlock() {
+    if (!gate || !content) return;
+    gate.classList.add('d-none');
+    content.classList.remove('d-none');
+  }
+
+  if (localStorage.getItem(STORAGE_KEY) === '1') {
+    unlock();
+  }
+
+  window.addEventListener('message', (event) => {
+    const data = event.data;
+    if (
+      data &&
+      data.type === 'hsFormCallback' &&
+      data.eventName === 'onFormSubmitted' &&
+      data.formGuid === GATE_FORM_ID
+    ) {
+      localStorage.setItem(STORAGE_KEY, '1');
+      unlock();
+    }
+  });
+})();
+</script>
 </body>
 </html>
