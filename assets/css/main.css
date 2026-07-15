@@ -17,31 +17,36 @@ html, body {
   color: #e11d48; /* rose-600-style accent */
 }
 
-.bg-hero {
-  background: radial-gradient(circle at top left, #fee2e2 0, transparent 60%),
-              radial-gradient(circle at top right, #dbeafe 0, transparent 55%),
-              #ffffff;
-}
-
-.bg-hero-soft {
-  background: radial-gradient(circle at top left, #dcfce7 0, transparent 55%),
-              #ffffff;
-}
-
 .bg-rrs-soft {
   background: #fef2f2;
 }
 
+/* Hero section */
+.bg-hero {
+  background: url("../img/hero-bg.jpg") center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.bg-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11,15,25,0.6);
+}
+
+.bg-hero > .container { position: relative; z-index: 1; }
+
 .btn-rrs {
-  background-color: #e11d48;
-  border-color: #e11d48;
-  color: #ffffff;
+  background-color: #c53030;
+  border: none;
+  color: #fff;
 }
 
 .btn-rrs:hover {
-  background-color: #be123c;
-  border-color: #be123c;
-  color: #ffffff;
+  background-color: #a31e1e;
+  box-shadow: 0 0 15px rgba(255,70,70,0.5);
+  color: #fff;
 }
 
 .bg-rrs-soft .btn-rrs {
@@ -86,32 +91,6 @@ html, body {
   border: 1px solid rgba(148, 163, 184, 0.3);
 }
 
-/* Form card */
-.rrs-form-card {
-  background-color: #ffffff;
-  border-radius: 1rem;
-  padding: 1.5rem 1.75rem;
-  border: 1px solid rgba(148, 163, 184, 0.3);
-}
-
-/* Stats */
-.rrs-stat-card {
-  background-color: #ffffff;
-  border-radius: 1rem;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid rgba(148, 163, 184, 0.3);
-}
-
-.rrs-stat-value {
-  font-size: 1.8rem;
-  font-weight: 800;
-}
-
-.rrs-stat-label {
-  font-size: 0.85rem;
-  color: #6b7280;
-}
-
 /* Links */
 .link-rrs {
   color: #e11d48;
@@ -138,6 +117,7 @@ html, body {
   padding-top: 4.5rem !important;
   padding-bottom: 4.5rem !important;
 }
+.py-6 { padding-top: 6rem; padding-bottom: 6rem; }
 
 /* Small helper */
 @media (max-width: 575.98px) {
@@ -151,45 +131,7 @@ html, body {
   padding-inline: 1rem;
 }
 
-/* Hero section */
-.bg-hero {
-  background: url("../img/hero-bg.png") center/cover no-repeat;
-  position: relative;
-  color: #fff;
-}
-
-.bg-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(11,15,25,0.6);
-}
-
-.bg-hero > .container { position: relative; z-index: 1; }
-
-.btn-rrs {
-  background-color: #c53030;
-  border: none;
-  color: #fff;
-}
-.btn-rrs:hover {
-  background-color: #a31e1e;
-}
-
-.bg-mesh {
-  background: url("../img/bg-mesh.png") center/cover no-repeat;
-  background-attachment: fixed;
-  color: #fff;
-}
-
-.btn-rrs:hover {
-  box-shadow: 0 0 15px rgba(255,70,70,0.5);
-}
-
 section { transition: background 0.5s ease-in-out, color 0.5s ease-in-out; }
-
-.py-6 { padding-top: 6rem; padding-bottom: 6rem; }
-
 
 /* Generic wave strip */
 .rrs-wave {
@@ -212,73 +154,4 @@ section { transition: background 0.5s ease-in-out, color 0.5s ease-in-out; }
 
 .rrs-wave-dark {
   background-image: url("../svg/divider-dark.svg");
-}
-
-.section-wave-top,
-.section-wave-bottom {
-  position: relative;
-  z-index: 0;
-}
-
-.section-wave-top::before,
-.section-wave-bottom::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 80px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  z-index: -1;
-}
-
-/* top vs bottom placement */
-.section-wave-top::before {
-  top: -79px;
-}
-.section-wave-bottom::after {
-  bottom: -79px;
-}
-
-/* color variants */
-.section-wave-red::before,
-.section-wave-red::after {
-  background-image: url("../svg/divider-red.svg");
-}
-.section-wave-orange::before,
-.section-wave-orange::after {
-  background-image: url("../svg/divider-orange.svg");
-}
-.section-wave-dark::before,
-.section-wave-dark::after {
-  background-image: url("../svg/divider-dark.svg");
-}
-
-
-body {
-    font-family: 'Arial', sans-serif;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
-section {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-form input,
-form textarea {
-    font-family: inherit;
-    outline: none;
-}
-
-form button:hover {
-    background-color: #e53e3e;
-}
-
-footer {
-    margin-top: 20px;
 }
